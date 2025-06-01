@@ -123,7 +123,33 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Enemies.cpp" />
+    <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="Level_1.cpp" />
+    <ClCompile Include="Level_2.cpp" />
+    <ClCompile Include="Level_3.cpp" />
+    <ClCompile Include="Level_4.cpp" />
+    <ClCompile Include="Level_5.cpp" />
+    <ClCompile Include="PlayerController.cpp" />
     <ClCompile Include="RedIce2.cpp" />
+    <ClCompile Include="Shop.cpp" />
+    <ClCompile Include="Text.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Enemies.h" />
+    <ClInclude Include="GameManager.h" />
+    <ClInclude Include="Level_1.h" />
+    <ClInclude Include="Level_2.h" />
+    <ClInclude Include="Level_3.h" />
+    <ClInclude Include="Level_4.h" />
+    <ClInclude Include="Level_5.h" />
+    <ClInclude Include="PlayerController.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Shop.h" />
+    <ClInclude Include="Text.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RedIce2.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
