@@ -1,5 +1,12 @@
 #include "GameManager.h"
 
+Level_1 GameManager::Level1;
+Level_2 GameManager::Level2;
+Level_3 GameManager::Level3;
+Level_4 GameManager::Level4;
+Level_5 GameManager::Level5;
+
+
 void GameManager::StartLevel1()
 {
 	Level1.StartLevel();

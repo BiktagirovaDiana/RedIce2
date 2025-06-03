@@ -15,12 +15,7 @@ using std::endl;
 
 class GameManager
 {
-private:
-	Level_1 Level1;
-	Level_2 Level2;
-	Level_3 Level3;
-	Level_4 Level4;
-	Level_5 Level5;
+
 
 public:
 	static void StartLevel1();
@@ -30,5 +25,11 @@ public:
 	static void StartLevel5();
 	static void Win();
 	static void Lose();
+
+	static Level_1 Level1;
+	static Level_2 Level2;
+	static Level_3 Level3;
+	static Level_4 Level4;
+	static Level_5 Level5;
 };
 
