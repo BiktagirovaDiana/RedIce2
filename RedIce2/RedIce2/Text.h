@@ -6,6 +6,8 @@ using std::endl;
 
 class Text
 {
+public:
+
 	struct Level1
 	{
 		void HelloPablo();
