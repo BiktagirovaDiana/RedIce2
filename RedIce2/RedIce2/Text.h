@@ -6,23 +6,23 @@ using std::endl;
 
 class Text
 {
-	struct Level_1
+	struct Level1
 	{
 		void HelloPablo();
 	};
-	struct Level_2
+	struct Level2
 	{
 
 	};
-	struct Level_3
+	struct Level3
 	{
 
 	};
-	struct Level_4
+	struct Level4
 	{
 
 	};
-	struct Level_5
+	struct Level5
 	{
 
 	};

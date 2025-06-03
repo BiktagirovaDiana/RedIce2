@@ -1,6 +1,6 @@
 #include "Text.h"
 
-void Text::Level_1::HelloPablo() 
+void Text::Level1::HelloPablo() 
 {
 	cout << "Пабло:" << endl;
 	cout << "Здравствуйте мистер Корлионе я ваш новый помощник Пабло, отныне я буду заменять ныне покойного Сантьяго. " << endl;
