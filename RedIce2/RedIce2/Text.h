@@ -10,7 +10,7 @@ public:
 
 	struct Level1
 	{
-		void HelloPablo();
+		static void HelloPablo();
 	};
 	struct Level2
 	{
