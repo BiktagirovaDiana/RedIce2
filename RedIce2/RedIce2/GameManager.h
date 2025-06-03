@@ -23,12 +23,12 @@ private:
 	Level_5 Level5;
 
 public:
-	void StartLevel1();
-	void StartLevel2();
-	void StartLevel3();
-	void StartLevel4();
-	void StartLevel5();
-	void Win();
-	void Lose();
+	static void StartLevel1();
+	static void StartLevel2();
+	static void StartLevel3();
+	static void StartLevel4();
+	static void StartLevel5();
+	static void Win();
+	static void Lose();
 };
 
