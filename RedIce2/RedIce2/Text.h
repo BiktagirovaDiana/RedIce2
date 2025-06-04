@@ -12,7 +12,7 @@ public:
 	{
 		static void HelloPablo1();
 		static void Strategy1();
-		// текст для атаки в пустыни
+		// атака в пустыне
 		static void PeopleDesert();
 		static void StrategyDesert();
 		static void DesertAttak();
@@ -20,13 +20,13 @@ public:
 		static void Death1();
 		static void Survive();
 		static void Win1();
-		// текст для логова врага
+		// атака в логове врага
 		static void PeopleLair();
 		static void AttakLair();
 		static void Win2();
-		// текст пригласить в свое логово
+		// пригласить к себе
 		static void Nothing();
-		// текст переговоры
+		// переговоры
 		static void Negotations();
 		static void WinNegotations1();
 		static void WinNegotations2();
@@ -67,7 +67,23 @@ public:
 
 	struct Level3
 	{
-
+		static void HelloPablo3();
+		// отакз от встречи
+		static void Refusal();
+		static void LoseRefusal();
+		static void Meeting();
+		// шпион
+		static void Spy();
+		static void StupedSpy();
+		static void CleverSpy();
+		static void CleverSpy2();
+		// атака
+		static void Strategy3();
+		static void Laboratory();
+		static void KillScientists();
+		static void KidnapScientists();
+		static void WinCheap();
+		static void WinExpensive();
 	};
 
 	struct Level4
