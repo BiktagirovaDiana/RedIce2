@@ -10,7 +10,7 @@ public:
 
 	struct Level1
 	{
-		static void HelloPablo();
+		static void HelloPablo1();
 		static void Strategy1();
 		// текст для атаки в пустыни
 		static void PeopleDesert();
@@ -32,18 +32,49 @@ public:
 		static void WinNegotations2();
 		static void LoseNegotations();
 	};
+
 	struct Level2
 	{
-
+		static void HelloPablo2();
+		// откуп
+		static void PayOff();
+		// атака
+		static void Strategy2();
+		// ловушки
+		static void ChooseTrap();
+		static void Trap1();
+		static void Trap2();
+		// разборки
+		static void AttackPlace();
+		static void PeopleAttack();
+		// место
+		static void Restaurant();
+		static void Station();
+		static void Desert();
+		// стратегия боя
+		static void StrategyAttack();
+		static void AttackFirst();
+		static void Defence();
+		static void ContinueStrat();
+		// если не было успешной ловушки
+		static void ifGrenade();
+		static void ifGuns();
+		static void FinalPart();
+		static void WinL2();
+		// если была успешная ловушка
+		static void WinL2Short();
 	};
+
 	struct Level3
 	{
 
 	};
+
 	struct Level4
 	{
 
 	};
+
 	struct Level5
 	{
 
