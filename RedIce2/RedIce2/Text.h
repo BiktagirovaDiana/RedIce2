@@ -88,6 +88,22 @@ public:
 
 	struct Level4
 	{
+		static void HelloPablo4();
+		// откуп
+		static void BuyOff();
+		// мирный способ
+		static void Peaceful();
+		static void Peaceful2();
+		static void WinPolice();
+		// бой с полицией
+		static void AttackPolice();
+		// дождаться рейда
+		static void Search();
+		static void Fight();
+		// заманить в ловушку
+		static void Warning();
+		static void Trap();
+		static void PoliceWin();
 
 	};
 
