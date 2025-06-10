@@ -109,7 +109,44 @@ public:
 
 	struct Level5
 	{
-
+		static void HelloPablo5();
+		// встреча с Чаппо
+		static void Meeting();
+		// бой с Чаппо
+		static void AttackChapo();
+		// заманить в ловушку
+		static void Trap();
+		// найти друга
+		static void Friend();
+		// план боя
+		static void AttackPlane();
+		static void AttackPlane2();
+		// стратегия ловушка
+		static void TrapStrategy();
+		// ловушка с Марго
+		static void TrapMargo();
+		static void DeathMargo();
+		static void WinSad();
+		// ловушка на нейтральной территории
+		static void NeutralPlace();
+		static void NeutralPlace2();
+		static void War();
+		// ловушка слежка за Чапо
+		static void Surveillance();
+		static void WinShort();
+		// лобовая атака
+		static void AttackStartegy();
+		static void AttackStartegy2();
+		static void AttackStartegy3();
+		// стратегии
+		static void ifDefense();
+		static void ifAttack();
+		// бой
+		static void HowContiniue();
+		static void ifPatrons();
+		static void RPGorGrenade();
+		static void NoRPG();
+		static void WinFinal();
 	};
 };
 
