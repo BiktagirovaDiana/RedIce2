@@ -15,8 +15,6 @@ using std::endl;
 
 class GameManager
 {
-
-
 public:
 	static void StartLevel1();
 	static void StartLevel2();
