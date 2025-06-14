@@ -4,6 +4,7 @@
 #include <iostream>
 
 class GameManager;
+class Shop;
 
 class Level_4
 {

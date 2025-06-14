@@ -1,5 +1,6 @@
 #include "Level_4.h"
 #include "GameManager.h"
+#include "Shop.h"
 
 using std::cout;
 using std::cin;
@@ -58,9 +59,12 @@ void Level_4::Raid()
 	{
 	case 1:
 		Text::Level4::Warning();
+		
+		//Shop::BuyOrNor();
 		break;
 	case 2:
 		WaitRaid();
+		break;
 	}
 }
 
@@ -72,9 +76,12 @@ void Level_4::WaitRaid()
 	switch (choice)
 	{
 	case 1:
-
+		PreparationForSearch();
+		break;
 	case 2:
-
+		Text::Level4::Fight();
+		GameManager::Lose();
+		break;
 	}
 
 }
