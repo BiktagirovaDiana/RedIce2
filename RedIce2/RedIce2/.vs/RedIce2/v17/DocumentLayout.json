@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Enemies.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Enemies.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Enemies.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Enemies.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Text.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Text.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
@@ -18,11 +26,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Text.h",
               "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Text.h",
               "RelativeDocumentMoniker": "Text.h",
@@ -31,7 +39,32 @@
               "ViewState": "AgIAAHgAAAAAAAAAAAAAwJQAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-06-03T16:38:09.3Z",
-              "IsPinned": true,
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Enemies.cpp",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Enemies.cpp",
+              "RelativeDocumentMoniker": "Enemies.cpp",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Enemies.cpp",
+              "RelativeToolTip": "Enemies.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-14T18:53:52.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Enemies.h",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Enemies.h",
+              "RelativeDocumentMoniker": "Enemies.h",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Enemies.h",
+              "RelativeToolTip": "Enemies.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-14T18:53:17.428Z",
               "EditorCaption": ""
             },
             {
@@ -42,7 +75,7 @@
               "RelativeDocumentMoniker": "Text.cpp",
               "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Text.cpp",
               "RelativeToolTip": "Text.cpp",
-              "ViewState": "AgIAADMCAAAAAAAAAAAAAHgCAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAAE0AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-06-03T16:38:05.454Z",
               "EditorCaption": ""
