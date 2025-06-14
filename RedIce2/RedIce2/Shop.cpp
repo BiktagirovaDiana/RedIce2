@@ -4,6 +4,19 @@ using std::cin;
 using std::endl;
 using std::string;
 
+int Shop::Level = 1;
+
+int Shop::PriceGun = 800;
+int Shop::PriceCartridges = 500;
+int Shop::PriceGrenade = 1500;
+int Shop::PriceRPG = 2000;
+
+//Урон
+int Shop::DamageGun = 10;
+int Shop::DamageGrenade = 20;
+int Shop::DamageRPG = 30;
+
+
 void Shop::InfoShop() {
 	cout << "========Магазин=======" << endl;
 	cout << "Патроны: " << endl;
@@ -77,23 +90,33 @@ void Shop::BuyOrNor() {
 }
 void Shop::BuyCartridges() //Покупка патрон
 {
-	if (Money >= PriceCartridges)
+	if (PlayerController::getMoney() >= PriceCartridges)
 	{
-		Money -= PriceCartridges;
-		Gun += 5;
+		int a = PlayerController::getMoney();
+		int b = a - PriceCartridges;
+		PlayerController::setMoney(b);
+		int c = PlayerController::getGun();
+		int d = c += 5;
+		PlayerController::setMoney(d);
 		cout << "Патроны: +5" << endl;
 	}
 	else {
 		cout << "Недостаточно денег" << endl;
 	}
 }
+
 void Shop::BuyGrenade() //Покупка гранат
 {
-	if (Money >= PriceGrenade)
+	if (PlayerController::getMoney() >= PriceGrenade)
 	{
-		Money -= PriceGrenade;
-		Grenade += 3;
+		int a = PlayerController::getMoney();
+		int b = a - PriceGrenade;
+		PlayerController::setMoney(b);
+		int c = PlayerController::getGrenade();
+		int d = c += 3;
+		PlayerController::setMoney(d);
 		cout << "Гранаты: +3" << endl;
+		
 	}
 	else {
 		cout << "Недостаточно денег" << endl;
@@ -101,10 +124,14 @@ void Shop::BuyGrenade() //Покупка гранат
 }
 void Shop::BuyRPG() //Покупка РПГ
 {
-	if (Money >= PriceRPG)
+	if (PlayerController::getMoney() >= PriceRPG)
 	{
-		Money -= PriceRPG;
-		RPG += 2;
+		int a = PlayerController::getMoney();
+		int b = a - PriceRPG;
+		PlayerController::setMoney(b);
+		int c = PlayerController::getRPG();
+		int d = c += 2;
+
 		cout << "РПГ куплен" << endl;
 	}
 	else {

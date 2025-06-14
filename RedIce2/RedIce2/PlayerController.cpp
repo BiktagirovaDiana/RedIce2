@@ -34,7 +34,62 @@ void PlayerController::InfoPlayer()
 		cout << "Инвентарь пуст" << endl;
 	}
 }
-int PlayerController::getMoney() 
+
+int PlayerController::getInfluence()
+{
+	return Influence;
+}
+;
+int PlayerController::getHP() 
+{
+	return HP;
+};
+int PlayerController::getMoney()
 {
 	return Money;
+};
+int PlayerController::getGun()
+{
+	return Gun;
+};
+int PlayerController::getGrenade() 
+{
+	return Grenade;
+};
+int PlayerController::getRPG() 
+{
+	return RPG;
+};
+
+int PlayerController::setInfluence(int x) 
+{
+	Influence = x;
+	return Influence;
 }
+;
+int PlayerController::setHP(int x)
+{
+	HP = x;
+	return HP;
+}
+;
+int PlayerController::setMoney(int x)
+{
+	Money = x;
+	return Money;
+};
+int PlayerController::setGun(int x)
+{
+	Gun = x;
+	return Gun;
+};
+int PlayerController::setGrenade(int x)
+{
+	Grenade = x;
+	return Grenade;
+};
+int PlayerController::setRPG(int x)
+{
+	RPG = x;
+	return RPG;
+};

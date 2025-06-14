@@ -1,19 +1,21 @@
 #pragma once
 #include "PlayerController.h"
-class Shop : public PlayerController
+
+class PlayerController;
+class Shop
 {
 private:
-	int Level = 1;
+	static int Level;
 	//Цены
-	int PriceGun = 800;
-	int PriceCartridges = 500;
-	int PriceGrenade = 1500;
-	int PriceRPG = 2000;
+	static int PriceGun;
+	static int PriceCartridges;
+	static int PriceGrenade;
+	static int PriceRPG;
 
 	//Урон
-	int DamageGun = 10;
-	int DamageGrenade = 20;
-	int DamageRPG = 30;
+	static int DamageGun;
+	static int DamageGrenade;
+	static int DamageRPG;
 
 	//PlayerController Player;
 
