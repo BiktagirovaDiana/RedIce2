@@ -19,12 +19,12 @@ private:
 
 public:
 
-	void InfoShop();
-	void ChoiceBuy();
-	void BuyOrNor();
-	void BuyCartridges();
-	void BuyGrenade();
-	void BuyRPG();
+	static void InfoShop();
+	static void ChoiceBuy();
+	static void BuyOrNor();
+	static void BuyCartridges();
+	static void BuyGrenade();
+	static void BuyRPG();
 
 };
 
