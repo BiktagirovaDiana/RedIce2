@@ -3,8 +3,8 @@
 *.suo
 *.db
 *.pch
+*.xuo
 *.vsidx
 *.xsidx
 ipch/
 .vs/
-*.xuo
