@@ -1,1 +1,9 @@
 ".vs/" 
+# Visual Studio files
+*.suo
+*.db
+*.pch
+*.vsidx
+*.xsidx
+ipch/
+.vs/
