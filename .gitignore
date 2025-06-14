@@ -1,10 +1,11 @@
-".vs/" 
-# Visual Studio files
+# Visual Studio
 *.suo
-*.db
-*.pch
-*.xuo
+*.user
 *.vsidx
-*.xsidx
+*.db
 ipch/
 .vs/
+
+# Compiled files
+*.obj
+*.pch
