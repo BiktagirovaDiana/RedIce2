@@ -7,3 +7,4 @@
 *.xsidx
 ipch/
 .vs/
+*.xuo
