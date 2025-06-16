@@ -17,6 +17,8 @@ void Level_2::StartLevel()
         Attack();
         break;
     default:
+        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        StartLevel();
         break;
     }
 }
@@ -42,6 +44,8 @@ void Level_2::Attack()
         PeopleAttack();
         break;
     default:
+        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        Attack();
         break;
     }
 }
@@ -66,6 +70,8 @@ void Level_2::Trap()
         PeopleAttack();
         break;
     default:
+        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        Trap();
         break;
     }
 }
@@ -118,6 +124,8 @@ void Level_2::PeopleAttack()
         }
         break;
     default:
+        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        PeopleAttack();
         break;
     }
 }
@@ -145,6 +153,8 @@ void Level_2::AttackPlace()
         StrategyAttack();
         break;
     default:
+        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        AttackPlace();
         break;
     }
 }
@@ -186,6 +196,8 @@ void Level_2::StrategyAttack()
         }
         break;
     default:
+        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        StrategyAttack();
         break;
     }
 }
@@ -227,6 +239,8 @@ void Level_2::ContinueStrat()
         }
         break;
     default:
+        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        ContinueStrat();
         break;
     }
 }
@@ -281,6 +295,8 @@ void Level_2::FinalPart()
             }
             break;
         default:
+            cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+            FinalPart();
             break;
         }
     }

@@ -114,18 +114,7 @@ void Level_3::CleverSpy()
             PlayerController::setGun(PlayerController::getGun() - 2);
             PlayerController::InfoPlayer();
             Text::Level3::CleverSpy2();
-            cout << "Вы потратили 2 патрона и $700" << endl;
-            if (PlayerController::getMoney() >= 700)
-            {
-                PlayerController::setMoney(PlayerController::getMoney() - 700);
-                PlayerController::InfoPlayer();
-                Laboratory();
-            }
-            else
-            {
-                cout << "У вас недостаточно денег!" << endl;
-                GameManager::Lose();
-            }
+            Laboratory();
         }
         else
         {
