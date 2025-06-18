@@ -1,7 +1,4 @@
 #pragma once
-
-
-
 #include "Level_1.h"
 #include "Level_2.h"
 #include "Level_3.h"
@@ -15,8 +12,6 @@ using std::endl;
 
 class GameManager
 {
-
-
 public:
 	static void StartLevel1();
 	static void StartLevel2();

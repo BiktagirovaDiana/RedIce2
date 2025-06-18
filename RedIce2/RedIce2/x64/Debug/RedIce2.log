@@ -2,17 +2,47 @@
   GameManager.cpp
   Level_1.cpp
   Level_2.cpp
+D:\GitHub\RedIce2\RedIce2\RedIce2\GameManager.h(24,17): error C3646: Level1: неизвестный спецификатор переопределения
+  (компиляция исходного файла "Level_1.cpp")
+  
+D:\GitHub\RedIce2\RedIce2\RedIce2\GameManager.h(24,9): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Level_1.cpp")
+  
+D:\GitHub\RedIce2\RedIce2\RedIce2\GameManager.h(25,17): error C3646: Level2: неизвестный спецификатор переопределения
+  (компиляция исходного файла "Level_2.cpp")
+  
+D:\GitHub\RedIce2\RedIce2\RedIce2\GameManager.h(25,9): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Level_2.cpp")
+  
   Level_3.cpp
+D:\GitHub\RedIce2\RedIce2\RedIce2\GameManager.h(26,17): error C3646: Level3: неизвестный спецификатор переопределения
+  (компиляция исходного файла "Level_3.cpp")
+  
+D:\GitHub\RedIce2\RedIce2\RedIce2\GameManager.h(26,9): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Level_3.cpp")
+  
   Level_4.cpp
   Level_5.cpp
   PlayerController.cpp
   RedIce2.cpp
   Shop.cpp
+D:\GitHub\RedIce2\RedIce2\RedIce2\Level_1.h(12,10): error C3646: shop: неизвестный спецификатор переопределения
+  (компиляция исходного файла "Shop.cpp")
+  
+D:\GitHub\RedIce2\RedIce2\RedIce2\Level_1.h(12,5): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Shop.cpp")
+  
+D:\GitHub\RedIce2\RedIce2\RedIce2\Level_2.h(12,10): error C3646: shop: неизвестный спецификатор переопределения
+  (компиляция исходного файла "Shop.cpp")
+  
+D:\GitHub\RedIce2\RedIce2\RedIce2\Level_2.h(12,5): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Shop.cpp")
+  
+D:\GitHub\RedIce2\RedIce2\RedIce2\Level_3.h(11,7): error C3646: shop: неизвестный спецификатор переопределения
+  (компиляция исходного файла "Shop.cpp")
+  
+D:\GitHub\RedIce2\RedIce2\RedIce2\Level_3.h(11,2): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Shop.cpp")
+  
   Text.cpp
-D:\GitHub\RedIce2\RedIce2\RedIce2\Text.cpp(40,10): warning C4566: символ, представленный универсальным именем символа "\u2003", невозможно представить в текущей кодовой странице (1251)
-D:\GitHub\RedIce2\RedIce2\RedIce2\Text.cpp(41,3): warning C4566: символ, представленный универсальным именем символа "\u2003", невозможно представить в текущей кодовой странице (1251)
-D:\GitHub\RedIce2\RedIce2\RedIce2\Text.cpp(46,10): warning C4566: символ, представленный универсальным именем символа "\u2003", невозможно представить в текущей кодовой странице (1251)
-D:\GitHub\RedIce2\RedIce2\RedIce2\Text.cpp(47,3): warning C4566: символ, представленный универсальным именем символа "\u2003", невозможно представить в текущей кодовой странице (1251)
-D:\GitHub\RedIce2\RedIce2\RedIce2\Text.cpp(80,10): warning C4566: символ, представленный универсальным именем символа "\u2003", невозможно представить в текущей кодовой странице (1251)
   Создание кода...
-  RedIce2.vcxproj -> D:\GitHub\RedIce2\RedIce2\x64\Debug\RedIce2.exe

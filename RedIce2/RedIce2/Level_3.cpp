@@ -81,7 +81,7 @@ void Level_3::Spy()
             break;
         case 2:
             Text::Level3::StupedSpy();
-            shop.BuyOrNor();
+            shop.BuyOrNot();
             Shooting();
             break;
         default:
@@ -136,7 +136,7 @@ void Level_3::Shooting()
         PlayerController::setMoney(PlayerController::getMoney() - 1200);
         PlayerController::InfoPlayer();
 
-        shop.BuyOrNor();
+        shop.BuyOrNot();
 
         int choice = 0;
         Text::Level3::Strategy3();

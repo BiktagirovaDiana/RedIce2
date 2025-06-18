@@ -11,45 +11,45 @@ int Shop::PriceCartridges = 500;
 int Shop::PriceGrenade = 1500;
 int Shop::PriceRPG = 2000;
 
-//Урон
+//РЈСЂРѕРЅ
 int Shop::DamageGun = 10;
 int Shop::DamageGrenade = 20;
 int Shop::DamageRPG = 30;
 
 
 void Shop::InfoShop() {
-	cout << "========Магазин=======" << endl;
-	cout << "Патроны: " << endl;
-	cout << "Цена: " << PriceCartridges << endl;
+	cout << "========РњР°РіР°Р·РёРЅ=======" << endl;
+	cout << "РџР°С‚СЂРѕРЅС‹: " << endl;
+	cout << "Р¦РµРЅР°: " << PriceCartridges << endl;
 
 	if (Level >= 2)
 	{
-		cout << "Гранаты:" << endl;
-		cout << "Количество: 3" << endl;
-		cout << "Урон: " << DamageGrenade << endl;
-		cout << "Цена: " << PriceGrenade << endl;
+		cout << "Р“СЂР°РЅР°С‚С‹:" << endl;
+		cout << "РљРѕР»РёС‡РµСЃС‚РІРѕ: 3" << endl;
+		cout << "РЈСЂРѕРЅ: " << DamageGrenade << endl;
+		cout << "Р¦РµРЅР°: " << PriceGrenade << endl;
 	}
 	else {
-		cout << "Гранаты доступны на 2 уровне" << endl;
+		cout << "Р“СЂР°РЅР°С‚С‹ РґРѕСЃС‚СѓРїРЅС‹ РЅР° 2 СѓСЂРѕРІРЅРµ" << endl;
 	}
 	if (Level >= 4)
 	{
-		cout << "РПГ:" << endl;
-		cout << "Количество: 1 (заряжен на 2 выстрела)" << endl;
-		cout << "Урон: " << DamageRPG << endl;
-		cout << "Цена: " << PriceRPG << endl;
+		cout << "Р РџР“:" << endl;
+		cout << "РљРѕР»РёС‡РµСЃС‚РІРѕ: 1 (Р·Р°СЂСЏР¶РµРЅ РЅР° 2 РІС‹СЃС‚СЂРµР»Р°)" << endl;
+		cout << "РЈСЂРѕРЅ: " << DamageRPG << endl;
+		cout << "Р¦РµРЅР°: " << PriceRPG << endl;
 	}
 	else {
-		cout << "РПГ доступен на 4 уровне" << endl;
+		cout << "Р РџР“ РґРѕСЃС‚СѓРїРµРЅ РЅР° 4 СѓСЂРѕРІРЅРµ" << endl;
 	}
 
 }
 void Shop::ChoiceBuy()
 {
-	cout << "Выберите что купить" << endl;
-	cout << "1 - Патроны" << endl;
-	cout << "2 - Гранаты" << endl;
-	cout << "3 - РПГ" << endl;
+	cout << "Р’С‹Р±РµСЂРёС‚Рµ С‡С‚Рѕ РєСѓРїРёС‚СЊ" << endl;
+	cout << "1 - РџР°С‚СЂРѕРЅС‹" << endl;
+	cout << "2 - Р“СЂР°РЅР°С‚С‹" << endl;
+	cout << "3 - Р РџР“" << endl;
 	int choice = 0;
 	cin >> choice;
 	switch (choice)
@@ -68,10 +68,10 @@ void Shop::ChoiceBuy()
 	}
 
 }
-void Shop::BuyOrNor() {
-	cout << "Приобрести дополнительное оружие?" << endl;
-	cout << "1: Нет" << endl;
-	cout << "2: Так уж и быть" << endl;
+void Shop::BuyOrNot() {
+	cout << "РџСЂРёРѕР±СЂРµСЃС‚Рё РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕРµ РѕСЂСѓР¶РёРµ?" << endl;
+	cout << "1: РќРµС‚" << endl;
+	cout << "2: РўР°Рє СѓР¶ Рё Р±С‹С‚СЊ" << endl;
 
 	int choice = 0;
 	cin >> choice;
@@ -83,12 +83,12 @@ void Shop::BuyOrNor() {
 	case 2:
 		InfoShop();
 		ChoiceBuy();
-
+		break;
 	default:
 		break;
 	}
 }
-void Shop::BuyCartridges() //Покупка патрон
+void Shop::BuyCartridges() //РџРѕРєСѓРїРєР° РїР°С‚СЂРѕРЅ
 {
 	if (PlayerController::getMoney() >= PriceCartridges)
 	{
@@ -97,15 +97,15 @@ void Shop::BuyCartridges() //Покупка патрон
 		PlayerController::setMoney(b);
 		int c = PlayerController::getGun();
 		int d = c += 5;
-		PlayerController::setMoney(d);
-		cout << "Патроны: +5" << endl;
+		PlayerController::setGun(d);
+		cout << "РџР°С‚СЂРѕРЅС‹: +5" << endl;
 	}
 	else {
-		cout << "Недостаточно денег" << endl;
+		cout << "РќРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РґРµРЅРµРі" << endl;
 	}
 }
 
-void Shop::BuyGrenade() //Покупка гранат
+void Shop::BuyGrenade() //РџРѕРєСѓРїРєР° РіСЂР°РЅР°С‚
 {
 	if (PlayerController::getMoney() >= PriceGrenade)
 	{
@@ -114,15 +114,15 @@ void Shop::BuyGrenade() //Покупка гранат
 		PlayerController::setMoney(b);
 		int c = PlayerController::getGrenade();
 		int d = c += 3;
-		PlayerController::setMoney(d);
-		cout << "Гранаты: +3" << endl;
+		PlayerController::setGrenade(d);
+		cout << "Р“СЂР°РЅР°С‚С‹: +3" << endl;
 		
 	}
 	else {
-		cout << "Недостаточно денег" << endl;
+		cout << "РќРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РґРµРЅРµРі" << endl;
 	}
 }
-void Shop::BuyRPG() //Покупка РПГ
+void Shop::BuyRPG() //РџРѕРєСѓРїРєР° Р РџР“
 {
 	if (PlayerController::getMoney() >= PriceRPG)
 	{
@@ -131,10 +131,11 @@ void Shop::BuyRPG() //Покупка РПГ
 		PlayerController::setMoney(b);
 		int c = PlayerController::getRPG();
 		int d = c += 2;
+		PlayerController::setRPG(d);
 
-		cout << "РПГ куплен" << endl;
+		cout << "Р РџР“ РєСѓРїР»РµРЅ" << endl;
 	}
 	else {
-		cout << "Недостаточно денег" << endl;
+		cout << "РќРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РґРµРЅРµРі" << endl;
 	}
 }

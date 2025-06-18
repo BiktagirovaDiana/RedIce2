@@ -37,12 +37,12 @@ void GameManager::StartLevel5()
 }
 void GameManager::Win() 
 {
-	cout << "Вы успешно прошли наисложнешую игру! :D" << endl;
+	cout << "Р’С‹ СѓСЃРїРµС€РЅРѕ РїСЂРѕС€Р»Рё РЅР°РёСЃР»РѕР¶РЅРµС€СѓСЋ РёРіСЂСѓ! :D" << endl;
 	exit(0);
 
 }
 void GameManager::Lose() 
 {
-	cout << "Вы проиграли" << endl;
+	cout << "Р’С‹ РїСЂРѕРёРіСЂР°Р»Рё" << endl;
 	exit(0);
 }

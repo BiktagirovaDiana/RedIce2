@@ -12,7 +12,7 @@ public:
 	{
 		static void HelloPablo1();
 		static void Strategy1();
-		// атака в пустыне
+		// Р°С‚Р°РєР° РІ РїСѓСЃС‚С‹РЅРµ
 		static void PeopleDesert();
 		static void StrategyDesert();
 		static void DesertAttak();
@@ -20,13 +20,13 @@ public:
 		static void Death1();
 		static void Survive();
 		static void Win1();
-		// атака в логове врага
+		// Р°С‚Р°РєР° РІ Р»РѕРіРѕРІРµ РІСЂР°РіР°
 		static void PeopleLair();
 		static void AttakLair();
 		static void Win2();
-		// пригласить к себе
+		// РїСЂРёРіР»Р°СЃРёС‚СЊ Рє СЃРµР±Рµ
 		static void Nothing();
-		// переговоры
+		// РїРµСЂРµРіРѕРІРѕСЂС‹
 		static void Negotations();
 		static void WinNegotations1();
 		static void WinNegotations2();
@@ -36,48 +36,48 @@ public:
 	struct Level2
 	{
 		static void HelloPablo2();
-		// откуп
+		// РѕС‚РєСѓРї
 		static void PayOff();
-		// атака
+		// Р°С‚Р°РєР°
 		static void Strategy2();
-		// ловушки
+		// Р»РѕРІСѓС€РєРё
 		static void ChooseTrap();
 		static void Trap1();
 		static void Trap2();
-		// разборки
+		// СЂР°Р·Р±РѕСЂРєРё
 		static void AttackPlace();
 		static void PeopleAttack();
-		// место
+		// РјРµСЃС‚Рѕ
 		static void Restaurant();
 		static void Station();
 		static void Desert();
-		// стратегия боя
+		// СЃС‚СЂР°С‚РµРіРёСЏ Р±РѕСЏ
 		static void StrategyAttack();
 		static void AttackFirst();
 		static void Defence();
 		static void ContinueStrat();
-		// если не было успешной ловушки
+		// РµСЃР»Рё РЅРµ Р±С‹Р»Рѕ СѓСЃРїРµС€РЅРѕР№ Р»РѕРІСѓС€РєРё
 		static void ifGrenade();
 		static void ifGuns();
 		static void FinalPart();
 		static void WinL2();
-		// если была успешная ловушка
+		// РµСЃР»Рё Р±С‹Р»Р° СѓСЃРїРµС€РЅР°СЏ Р»РѕРІСѓС€РєР°
 		static void WinL2Short();
 	};
 
 	struct Level3
 	{
 		static void HelloPablo3();
-		// отакз от встречи
+		// РѕС‚Р°РєР· РѕС‚ РІСЃС‚СЂРµС‡Рё
 		static void Refusal();
 		static void LoseRefusal();
 		static void Meeting();
-		// шпион
+		// С€РїРёРѕРЅ
 		static void Spy();
 		static void StupedSpy();
 		static void CleverSpy();
 		static void CleverSpy2();
-		// атака
+		// Р°С‚Р°РєР°
 		static void Strategy3();
 		static void Laboratory();
 		static void KillScientists();
@@ -89,18 +89,18 @@ public:
 	struct Level4
 	{
 		static void HelloPablo4();
-		// откуп
+		// РѕС‚РєСѓРї
 		static void BuyOff();
-		// мирный способ
+		// РјРёСЂРЅС‹Р№ СЃРїРѕСЃРѕР±
 		static void Peaceful();
 		static void Peaceful2();
 		static void WinPolice();
-		// бой с полицией
+		// Р±РѕР№ СЃ РїРѕР»РёС†РёРµР№
 		static void AttackPolice();
-		// дождаться рейда
+		// РґРѕР¶РґР°С‚СЊСЃСЏ СЂРµР№РґР°
 		static void Search();
 		static void Fight();
-		// заманить в ловушку
+		// Р·Р°РјР°РЅРёС‚СЊ РІ Р»РѕРІСѓС€РєСѓ
 		static void Warning();
 		static void Trap();
 		static void PoliceWin();
@@ -110,38 +110,38 @@ public:
 	struct Level5
 	{
 		static void HelloPablo5();
-		// встреча с Чаппо
+		// РІСЃС‚СЂРµС‡Р° СЃ Р§Р°РїРїРѕ
 		static void Meeting();
-		// бой с Чаппо
+		// Р±РѕР№ СЃ Р§Р°РїРїРѕ
 		static void AttackChapo();
-		// заманить в ловушку
+		// Р·Р°РјР°РЅРёС‚СЊ РІ Р»РѕРІСѓС€РєСѓ
 		static void Trap();
-		// найти друга
+		// РЅР°Р№С‚Рё РґСЂСѓРіР°
 		static void Friend();
-		// план боя
+		// РїР»Р°РЅ Р±РѕСЏ
 		static void AttackPlane();
 		static void AttackPlane2();
-		// стратегия ловушка
+		// СЃС‚СЂР°С‚РµРіРёСЏ Р»РѕРІСѓС€РєР°
 		static void TrapStrategy();
-		// ловушка с Марго
+		// Р»РѕРІСѓС€РєР° СЃ РњР°СЂРіРѕ
 		static void TrapMargo();
 		static void DeathMargo();
 		static void WinSad();
-		// ловушка на нейтральной территории
+		// Р»РѕРІСѓС€РєР° РЅР° РЅРµР№С‚СЂР°Р»СЊРЅРѕР№ С‚РµСЂСЂРёС‚РѕСЂРёРё
 		static void NeutralPlace();
 		static void NeutralPlace2();
 		static void War();
-		// ловушка слежка за Чапо
+		// Р»РѕРІСѓС€РєР° СЃР»РµР¶РєР° Р·Р° Р§Р°РїРѕ
 		static void Surveillance();
 		static void WinShort();
-		// лобовая атака
+		// Р»РѕР±РѕРІР°СЏ Р°С‚Р°РєР°
 		static void AttackStartegy();
 		static void AttackStartegy2();
 		static void AttackStartegy3();
-		// стратегии
+		// СЃС‚СЂР°С‚РµРіРёРё
 		static void ifDefense();
 		static void ifAttack();
-		// бой
+		// Р±РѕР№
 		static void HowContiniue();
 		static void ifPatrons();
 		static void RPGorGrenade();

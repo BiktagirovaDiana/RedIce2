@@ -1,4 +1,4 @@
-﻿#include "Text.h"
+#include "Text.h"
 
 // Уровень 1 
 void Text::Level1::HelloPablo1()

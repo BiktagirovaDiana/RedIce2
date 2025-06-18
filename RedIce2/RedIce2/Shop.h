@@ -6,13 +6,13 @@ class Shop
 {
 private:
 	static int Level;
-	//Öåíû
+	//Ð¦ÐµÐ½Ñ‹
 	static int PriceGun;
 	static int PriceCartridges;
 	static int PriceGrenade;
 	static int PriceRPG;
 
-	//Óðîí
+	//Ð£Ñ€Ð¾Ð½
 	static int DamageGun;
 	static int DamageGrenade;
 	static int DamageRPG;
@@ -23,7 +23,7 @@ public:
 
 	static void InfoShop();
 	static void ChoiceBuy();
-	static void BuyOrNor();
+	static void BuyOrNot();
 	static void BuyCartridges();
 	static void BuyGrenade();
 	static void BuyRPG();

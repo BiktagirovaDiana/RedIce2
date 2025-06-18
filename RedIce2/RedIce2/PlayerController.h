@@ -10,8 +10,8 @@ using std::endl;
 class PlayerController
 {
 private:
-    static int Influence;  // Âëèÿíèå (äîëæíî áûòü >= 30)
-    static int HP;        // Çäîğîâüå êàğòåëÿ (äîëæíî áûòü > 0)
+    static int Influence;  // Ğ’Ğ»Ğ¸ÑĞ½Ğ¸Ğµ (Ğ´Ğ¾Ğ»Ğ¶Ğ½Ğ¾ Ğ±Ñ‹Ñ‚ÑŒ >= 30)
+    static int HP;        // Ğ—Ğ´Ğ¾Ñ€Ğ¾Ğ²ÑŒĞµ ĞºĞ°Ñ€Ñ‚ĞµĞ»Ñ (Ğ´Ğ¾Ğ»Ğ¶Ğ½Ğ¾ Ğ±Ñ‹Ñ‚ÑŒ > 0)
     static int Money;
 
     static int Gun;

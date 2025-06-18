@@ -10,44 +10,44 @@ int PlayerController::RPG = 0;
 
 void PlayerController::InfoPlayer()
 {
-    // Проверка HP перед выводом информации
+    // РџСЂРѕРІРµСЂРєР° HP РїРµСЂРµРґ РІС‹РІРѕРґРѕРј РёРЅС„РѕСЂРјР°С†РёРё
     if (HP <= 0) {
-        cout << "Ваш картель уничтожен! HP упало до 0." << endl;
+        cout << "Р’Р°С€ РєР°СЂС‚РµР»СЊ СѓРЅРёС‡С‚РѕР¶РµРЅ! HP СѓРїР°Р»Рѕ РґРѕ 0." << endl;
         GameManager::Lose();
         return;
     }
 
-    // Проверка влияния
+    // РџСЂРѕРІРµСЂРєР° РІР»РёСЏРЅРёСЏ
     if (Influence < 30) {
-        cout << "Ваше влияние упало ниже 30%. Вас больше никто не боится!" << endl;
+        cout << "Р’Р°С€Рµ РІР»РёСЏРЅРёРµ СѓРїР°Р»Рѕ РЅРёР¶Рµ 30%. Р’Р°СЃ Р±РѕР»СЊС€Рµ РЅРёРєС‚Рѕ РЅРµ Р±РѕРёС‚СЃСЏ!" << endl;
         GameManager::Lose();
         return;
     }
 
-    cout << "Ваша текущая мощь:" << endl;
-    cout << "Влияние: " << Influence << endl;
-    cout << "Сила картеля (HP): " << HP << endl;
-    cout << "Капитал: " << Money << endl;
+    cout << "Р’Р°С€Р° С‚РµРєСѓС‰Р°СЏ РјРѕС‰СЊ:" << endl;
+    cout << "Р’Р»РёСЏРЅРёРµ: " << Influence << endl;
+    cout << "РЎРёР»Р° РєР°СЂС‚РµР»СЏ (HP): " << HP << endl;
+    cout << "РљР°РїРёС‚Р°Р»: " << Money << endl;
 
     if (Gun > 0 || Grenade > 0 || RPG > 0)
     {
-        cout << "Инвентарь: " << endl;
+        cout << "РРЅРІРµРЅС‚Р°СЂСЊ: " << endl;
         if (Gun > 0) {
-            cout << "Пистолет: " << Gun << " патрон(-а)" << endl;
+            cout << "РџРёСЃС‚РѕР»РµС‚: " << Gun << " РїР°С‚СЂРѕРЅ(-Р°)" << endl;
         }
         if (Grenade > 0) {
-            cout << "Граната: " << Grenade << " штук" << endl;
+            cout << "Р“СЂР°РЅР°С‚Р°: " << Grenade << " С€С‚СѓРє" << endl;
         }
         if (RPG > 0) {
-            cout << "РПГ: " << RPG << " заряд" << endl;
+            cout << "Р РџР“: " << RPG << " Р·Р°СЂСЏРґ" << endl;
         }
     }
     else {
-        cout << "Инвентарь пуст" << endl;
+        cout << "РРЅРІРµРЅС‚Р°СЂСЊ РїСѓСЃС‚" << endl;
     }
 }
 
-// Геттеры остаются без изменений
+// Р“РµС‚С‚РµСЂС‹ РѕСЃС‚Р°СЋС‚СЃСЏ Р±РµР· РёР·РјРµРЅРµРЅРёР№
 int PlayerController::getInfluence() { return Influence; }
 int PlayerController::getHP() { return HP; }
 int PlayerController::getMoney() { return Money; }
@@ -55,12 +55,12 @@ int PlayerController::getGun() { return Gun; }
 int PlayerController::getGrenade() { return Grenade; }
 int PlayerController::getRPG() { return RPG; }
 
-// Сеттеры с проверками
+// РЎРµС‚С‚РµСЂС‹ СЃ РїСЂРѕРІРµСЂРєР°РјРё
 int PlayerController::setInfluence(int x)
 {
     Influence = x;
     if (Influence < 30) {
-        cout << "Критически низкое влияние: " << Influence << "%" << endl;
+        cout << "РљСЂРёС‚РёС‡РµСЃРєРё РЅРёР·РєРѕРµ РІР»РёСЏРЅРёРµ: " << Influence << "%" << endl;
         GameManager::Lose();
     }
     return Influence;
@@ -71,7 +71,7 @@ int PlayerController::setHP(int x)
     HP = x;
     if (HP <= 0) {
         HP = 0;
-        cout << "HP упало до 0! Картель уничтожен." << endl;
+        cout << "HP СѓРїР°Р»Рѕ РґРѕ 0! РљР°СЂС‚РµР»СЊ СѓРЅРёС‡С‚РѕР¶РµРЅ." << endl;
         GameManager::Lose();
     }
     return HP;
