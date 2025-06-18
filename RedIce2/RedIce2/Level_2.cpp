@@ -1,4 +1,4 @@
-#include "Level_2.h"
+ï»¿#include "Level_2.h"
 
 void Level_2::StartLevel()
 {
@@ -17,7 +17,7 @@ void Level_2::StartLevel()
         Attack();
         break;
     default:
-        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        cout << "ÐÐ•ÐŸÐ ÐÐ’Ð˜Ð›Ð¬ÐÐ«Ð™ Ð’Ð’ÐžÐ”!" << endl;
         StartLevel();
         break;
     }
@@ -44,7 +44,7 @@ void Level_2::Attack()
         PeopleAttack();
         break;
     default:
-        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        cout << "ÐÐ•ÐŸÐ ÐÐ’Ð˜Ð›Ð¬ÐÐ«Ð™ Ð’Ð’ÐžÐ”!" << endl;
         Attack();
         break;
     }
@@ -70,7 +70,7 @@ void Level_2::Trap()
         PeopleAttack();
         break;
     default:
-        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        cout << "ÐÐ•ÐŸÐ ÐÐ’Ð˜Ð›Ð¬ÐÐ«Ð™ Ð’Ð’ÐžÐ”!" << endl;
         Trap();
         break;
     }
@@ -124,7 +124,7 @@ void Level_2::PeopleAttack()
         }
         break;
     default:
-        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        cout << "ÐÐ•ÐŸÐ ÐÐ’Ð˜Ð›Ð¬ÐÐ«Ð™ Ð’Ð’ÐžÐ”!" << endl;
         PeopleAttack();
         break;
     }
@@ -153,7 +153,7 @@ void Level_2::AttackPlace()
         StrategyAttack();
         break;
     default:
-        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        cout << "ÐÐ•ÐŸÐ ÐÐ’Ð˜Ð›Ð¬ÐÐ«Ð™ Ð’Ð’ÐžÐ”!" << endl;
         AttackPlace();
         break;
     }
@@ -196,7 +196,7 @@ void Level_2::StrategyAttack()
         }
         break;
     default:
-        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        cout << "ÐÐ•ÐŸÐ ÐÐ’Ð˜Ð›Ð¬ÐÐ«Ð™ Ð’Ð’ÐžÐ”!" << endl;
         StrategyAttack();
         break;
     }
@@ -239,7 +239,7 @@ void Level_2::ContinueStrat()
         }
         break;
     default:
-        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        cout << "ÐÐ•ÐŸÐ ÐÐ’Ð˜Ð›Ð¬ÐÐ«Ð™ Ð’Ð’ÐžÐ”!" << endl;
         ContinueStrat();
         break;
     }
@@ -295,7 +295,7 @@ void Level_2::FinalPart()
             }
             break;
         default:
-            cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+            cout << "ÐÐ•ÐŸÐ ÐÐ’Ð˜Ð›Ð¬ÐÐ«Ð™ Ð’Ð’ÐžÐ”!" << endl;
             FinalPart();
             break;
         }

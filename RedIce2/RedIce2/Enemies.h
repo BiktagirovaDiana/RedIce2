@@ -1,13 +1,13 @@
-#pragma once
+п»ї#pragma once
 class Enemies
 {
 private:
     int EnemyHP;
 
 public:
-    Enemies(int hp); // Конструктор с начальным HP
-    int getHP() const; // Получить текущее HP
-    void setHP(int hp); // Установить новое HP
-    void takeDamage(int damage); // Нанести урон
+    Enemies(int hp); // РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ СЃ РЅР°С‡Р°Р»СЊРЅС‹Рј HP
+    int getHP() const; // РџРѕР»СѓС‡РёС‚СЊ С‚РµРєСѓС‰РµРµ HP
+    void setHP(int hp); // РЈСЃС‚Р°РЅРѕРІРёС‚СЊ РЅРѕРІРѕРµ HP
+    void takeDamage(int damage); // РќР°РЅРµСЃС‚Рё СѓСЂРѕРЅ
 };
 

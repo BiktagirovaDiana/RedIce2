@@ -1,4 +1,4 @@
-#include "Level_3.h"
+ï»¿#include "Level_3.h"
 
 void Level_3::StartLevel()
 {
@@ -15,7 +15,7 @@ void Level_3::StartLevel()
         NoMeeting();
         break;
     default:
-        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        cout << "ÐÐ•ÐŸÐ ÐÐ’Ð˜Ð›Ð¬ÐÐ«Ð™ Ð’Ð’ÐžÐ”!" << endl;
         StartLevel();
         break;
     }
@@ -36,7 +36,7 @@ void Level_3::Meeting()
         Spy();
         break;
     default:
-        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        cout << "ÐÐ•ÐŸÐ ÐÐ’Ð˜Ð›Ð¬ÐÐ«Ð™ Ð’Ð’ÐžÐ”!" << endl;
         Meeting();
         break;
     }
@@ -58,7 +58,7 @@ void Level_3::NoMeeting()
         GameManager::Lose();
         break;
     default:
-        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        cout << "ÐÐ•ÐŸÐ ÐÐ’Ð˜Ð›Ð¬ÐÐ«Ð™ Ð’Ð’ÐžÐ”!" << endl;
         NoMeeting();
         break;
     }
@@ -85,14 +85,14 @@ void Level_3::Spy()
             Shooting();
             break;
         default:
-            cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+            cout << "ÐÐ•ÐŸÐ ÐÐ’Ð˜Ð›Ð¬ÐÐ«Ð™ Ð’Ð’ÐžÐ”!" << endl;
             Spy();
             break;
         }
     }
     else
     {
-        cout << "Ó âàñ íåäîñòàòî÷íî äåíåã!" << endl;
+        cout << "Ð£ Ð²Ð°Ñ Ð½ÐµÐ´Ð¾ÑÑ‚Ð°Ñ‚Ð¾Ñ‡Ð½Ð¾ Ð´ÐµÐ½ÐµÐ³!" << endl;
         GameManager::Lose();
     }
 }
@@ -118,12 +118,12 @@ void Level_3::CleverSpy()
         }
         else
         {
-            cout << "Ó âàñ íåäîñòàòî÷íî ïàòðîíîâ!" << endl;
+            cout << "Ð£ Ð²Ð°Ñ Ð½ÐµÐ´Ð¾ÑÑ‚Ð°Ñ‚Ð¾Ñ‡Ð½Ð¾ Ð¿Ð°Ñ‚Ñ€Ð¾Ð½Ð¾Ð²!" << endl;
             CleverSpy();
         }
         break;
     default:
-        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        cout << "ÐÐ•ÐŸÐ ÐÐ’Ð˜Ð›Ð¬ÐÐ«Ð™ Ð’Ð’ÐžÐ”!" << endl;
         GameManager::Lose();
         break;
     }
@@ -154,7 +154,7 @@ void Level_3::Shooting()
             }
             else
             {
-                cout << "Ó âàñ íåäîñòàòî÷íî ïàòðîíîâ!" << endl;
+                cout << "Ð£ Ð²Ð°Ñ Ð½ÐµÐ´Ð¾ÑÑ‚Ð°Ñ‚Ð¾Ñ‡Ð½Ð¾ Ð¿Ð°Ñ‚Ñ€Ð¾Ð½Ð¾Ð²!" << endl;
                 GameManager::Lose();
             }
             break;
@@ -167,19 +167,19 @@ void Level_3::Shooting()
             }
             else
             {
-                cout << "Ó âàñ íåò ãðàíàò!" << endl;
+                cout << "Ð£ Ð²Ð°Ñ Ð½ÐµÑ‚ Ð³Ñ€Ð°Ð½Ð°Ñ‚!" << endl;
                 GameManager::Lose();
             }
             break;
         default:
-            cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+            cout << "ÐÐ•ÐŸÐ ÐÐ’Ð˜Ð›Ð¬ÐÐ«Ð™ Ð’Ð’ÐžÐ”!" << endl;
             Shooting();
             break;
         }
     }
     else
     {
-        cout << "Ó âàñ íåäîñòàòî÷íî äåíåã!" << endl;
+        cout << "Ð£ Ð²Ð°Ñ Ð½ÐµÐ´Ð¾ÑÑ‚Ð°Ñ‚Ð¾Ñ‡Ð½Ð¾ Ð´ÐµÐ½ÐµÐ³!" << endl;
         GameManager::Lose();
     }
 }
@@ -200,7 +200,7 @@ void Level_3::Laboratory()
         GameManager::Lose();
         break;
     default:
-        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        cout << "ÐÐ•ÐŸÐ ÐÐ’Ð˜Ð›Ð¬ÐÐ«Ð™ Ð’Ð’ÐžÐ”!" << endl;
         Laboratory();
         break;
     }
@@ -221,7 +221,7 @@ void Level_3::KidnapScientists()
         Text::Level3::WinExpensive();
         break;
     default:
-        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        cout << "ÐÐ•ÐŸÐ ÐÐ’Ð˜Ð›Ð¬ÐÐ«Ð™ Ð’Ð’ÐžÐ”!" << endl;
         KidnapScientists();
         break;
     }

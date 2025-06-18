@@ -1,4 +1,4 @@
-#include "Level_1.h"
+ï»¿#include "Level_1.h"
 
 void Level_1::StartLevel()
 {
@@ -16,7 +16,7 @@ void Level_1::StartLevel()
         Negotiations();
         break;
     default:
-        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        cout << "ÐÐ•ÐŸÐ ÐÐ’Ð˜Ð›Ð¬ÐÐ«Ð™ Ð’Ð’ÐžÐ”!" << endl;
         StartLevel();
         break;
     }
@@ -43,7 +43,7 @@ void Level_1::DestroyEnemy()
         DestroyEnemy();
         break;
     default:
-        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        cout << "ÐÐ•ÐŸÐ ÐÐ’Ð˜Ð›Ð¬ÐÐ«Ð™ Ð’Ð’ÐžÐ”!" << endl;
         DestroyEnemy();
         break;
     }
@@ -86,7 +86,7 @@ void Level_1::Negotiations()
         GameManager::Lose();
         break;
     default:
-        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        cout << "ÐÐ•ÐŸÐ ÐÐ’Ð˜Ð›Ð¬ÐÐ«Ð™ Ð’Ð’ÐžÐ”!" << endl;
         Negotiations();
         break;
     }
@@ -150,7 +150,7 @@ void Level_1::PeopleDesert()
         }
         break;
     default:
-        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        cout << "ÐÐ•ÐŸÐ ÐÐ’Ð˜Ð›Ð¬ÐÐ«Ð™ Ð’Ð’ÐžÐ”!" << endl;
         PeopleDesert();
         break;
     }
@@ -192,7 +192,7 @@ void Level_1::StrategyDesert()
         }
         break;
     default:
-        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        cout << "ÐÐ•ÐŸÐ ÐÐ’Ð˜Ð›Ð¬ÐÐ«Ð™ Ð’Ð’ÐžÐ”!" << endl;
         StrategyDesert();
         break;
     }
@@ -271,7 +271,7 @@ void Level_1::EnemysLair()
         }
         break;
     default:
-        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        cout << "ÐÐ•ÐŸÐ ÐÐ’Ð˜Ð›Ð¬ÐÐ«Ð™ Ð’Ð’ÐžÐ”!" << endl;
         EnemysLair();
         break;
     }
@@ -309,7 +309,7 @@ void Level_1::StrategyLair()
             }
             break;
         default:
-            cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+            cout << "ÐÐ•ÐŸÐ ÐÐ’Ð˜Ð›Ð¬ÐÐ«Ð™ Ð’Ð’ÐžÐ”!" << endl;
             StrategyLair();
             break;
         }

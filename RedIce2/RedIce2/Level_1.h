@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include "Text.h"
 #include "PlayerController.h"
 #include "GameManager.h"
@@ -11,21 +11,21 @@ class Level_1
 {
 private:
     int Killers = 0;
-    Shop& shop;  // ссылка должна быть инициализирована
+    Shop& shop;  // СЃСЃС‹Р»РєР° РґРѕР»Р¶РЅР° Р±С‹С‚СЊ РёРЅРёС†РёР°Р»РёР·РёСЂРѕРІР°РЅР°
     Enemies enemy;
 
 public:
     Level_1(Shop& shopRef) : shop(shopRef), enemy(40) {}
 
     void StartLevel();
-    // стратегии
+    // СЃС‚СЂР°С‚РµРіРёРё
     void DestroyEnemy();
     void Negotiations();
-    // бой в пустыне
+    // Р±РѕР№ РІ РїСѓСЃС‚С‹РЅРµ
     void PeopleDesert();
     void StrategyDesert();
     void LoseOrWin();
-    // бой в логове врага
+    // Р±РѕР№ РІ Р»РѕРіРѕРІРµ РІСЂР°РіР°
     void EnemysLair();
     void StrategyLair();
 };

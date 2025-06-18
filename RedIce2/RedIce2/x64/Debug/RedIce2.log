@@ -1,12 +1,18 @@
-﻿  Shop.cpp
-D:\GitHub\RedIce2\RedIce2\RedIce2\Level_1.h(14,10): error C2079: "Level_1::Shop" использует не имеющую определения структуру class "Shop"
-  (компиляция исходного файла "Shop.cpp")
-  
-D:\GitHub\RedIce2\RedIce2\RedIce2\Level_2.h(14,10): error C2079: "Level_2::Shop" использует не имеющую определения структуру class "Shop"
-  (компиляция исходного файла "Shop.cpp")
-  
-D:\GitHub\RedIce2\RedIce2\RedIce2\Level_3.h(13,7): error C2079: "Level_3::Shop" использует не имеющую определения структуру class "Shop"
-  (компиляция исходного файла "Shop.cpp")
-  
+﻿  Enemies.cpp
+  GameManager.cpp
+  Level_1.cpp
+  Level_2.cpp
+  Level_3.cpp
+  Level_4.cpp
+  Level_5.cpp
+  PlayerController.cpp
+  RedIce2.cpp
+  Shop.cpp
   Text.cpp
+D:\GitHub\RedIce2\RedIce2\RedIce2\Text.cpp(40,10): warning C4566: символ, представленный универсальным именем символа "\u2003", невозможно представить в текущей кодовой странице (1251)
+D:\GitHub\RedIce2\RedIce2\RedIce2\Text.cpp(41,3): warning C4566: символ, представленный универсальным именем символа "\u2003", невозможно представить в текущей кодовой странице (1251)
+D:\GitHub\RedIce2\RedIce2\RedIce2\Text.cpp(46,10): warning C4566: символ, представленный универсальным именем символа "\u2003", невозможно представить в текущей кодовой странице (1251)
+D:\GitHub\RedIce2\RedIce2\RedIce2\Text.cpp(47,3): warning C4566: символ, представленный универсальным именем символа "\u2003", невозможно представить в текущей кодовой странице (1251)
+D:\GitHub\RedIce2\RedIce2\RedIce2\Text.cpp(80,10): warning C4566: символ, представленный универсальным именем символа "\u2003", невозможно представить в текущей кодовой странице (1251)
   Создание кода...
+  RedIce2.vcxproj -> D:\GitHub\RedIce2\RedIce2\x64\Debug\RedIce2.exe
