@@ -10,6 +10,14 @@ using std::cout;
 using std::cin;
 using std::endl;
 
+
+class Level_1;
+class Level_2;
+class Level_3;
+class Level_4;
+class Level_5;
+
+
 class GameManager
 {
 public:

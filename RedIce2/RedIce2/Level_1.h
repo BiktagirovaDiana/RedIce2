@@ -5,11 +5,13 @@
 #include "Shop.h"
 #include "Enemies.h"
 
+class Shop;
+
 class Level_1
 {
 private:
     int Killers = 0;
-    Shop shop;
+    Shop Shop;
     Enemies enemy;
 
 public:

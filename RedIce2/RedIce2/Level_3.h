@@ -5,10 +5,12 @@
 #include "Shop.h"
 #include "Enemies.h"
 
+class Shop;
+
 class Level_3
 {
 private:
-	Shop shop;
+	Shop Shop;
 	Enemies enemy;
 public:
 	Level_3() : enemy(60) {}

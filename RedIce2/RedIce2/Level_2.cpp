@@ -25,7 +25,7 @@ void Level_2::StartLevel()
 
 void Level_2::Attack()
 {
-    shop.BuyOrNot();
+    Shop.BuyOrNot();
     PlayerController::InfoPlayer();
     int choice = 0;
     Text::Level2::Strategy2();
