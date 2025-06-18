@@ -1,14 +1,4 @@
-﻿  Enemies.cpp
-  GameManager.cpp
-  Level_1.cpp
-  Level_2.cpp
-  Level_3.cpp
-  Level_4.cpp
-  Level_5.cpp
-  PlayerController.cpp
-  RedIce2.cpp
-  Shop.cpp
-  Text.cpp
+﻿  Shop.cpp
 D:\GitHub\RedIce2\RedIce2\RedIce2\Level_1.h(14,10): error C2079: "Level_1::Shop" использует не имеющую определения структуру class "Shop"
   (компиляция исходного файла "Shop.cpp")
   
@@ -18,4 +8,5 @@ D:\GitHub\RedIce2\RedIce2\RedIce2\Level_2.h(14,10): error C2079: "Level_2::Shop"
 D:\GitHub\RedIce2\RedIce2\RedIce2\Level_3.h(13,7): error C2079: "Level_3::Shop" использует не имеющую определения структуру class "Shop"
   (компиляция исходного файла "Shop.cpp")
   
+  Text.cpp
   Создание кода...
