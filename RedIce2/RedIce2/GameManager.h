@@ -21,6 +21,14 @@ class Level_5;
 class GameManager
 {
 public:
+	static Shop shop;
+
+	static Level_1 Level1;
+	static Level_2 Level2;
+	static Level_3 Level3;
+	static Level_4 Level4;
+	static Level_5 Level5;
+
 	static void StartLevel1();
 	static void StartLevel2();
 	static void StartLevel3();
@@ -29,10 +37,5 @@ public:
 	static void Win();
 	static void Lose();
 
-	static Level_1 Level1;
-	static Level_2 Level2;
-	static Level_3 Level3;
-	static Level_4 Level4;
-	static Level_5 Level5;
-};
 
+};

@@ -31,11 +31,11 @@ void Level_1::DestroyEnemy()
     switch (choice)
     {
     case 1:
-        Shop.BuyOrNot();
+        shop.BuyOrNot();
         PeopleDesert();
         break;
     case 2:
-        Shop.BuyOrNot();
+        shop.BuyOrNot();
         EnemysLair();
         break;
     case 3:
@@ -293,7 +293,7 @@ void Level_1::StrategyLair()
         switch (choice)
         {
         case 1:
-            Shop.BuyOrNot();
+            shop.BuyOrNot();
             PeopleDesert();
             break;
         case 2:

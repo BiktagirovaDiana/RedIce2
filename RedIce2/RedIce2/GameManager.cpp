@@ -1,8 +1,8 @@
 #include "GameManager.h"
-
-Level_1 GameManager::Level1;
-Level_2 GameManager::Level2;
-Level_3 GameManager::Level3;
+Shop GameManager::shop;  // Сначала Shop
+Level_1 GameManager::Level1(GameManager::shop);
+Level_2 GameManager::Level2(GameManager::shop);
+Level_3 GameManager::Level3(GameManager::shop);
 Level_4 GameManager::Level4;
 Level_5 GameManager::Level5;
 
@@ -35,13 +35,13 @@ void GameManager::StartLevel5()
 	Level5.StartLevel();
 	Win();
 }
-void GameManager::Win() 
+void GameManager::Win()
 {
 	cout << "Вы успешно прошли наисложнешую игру! :D" << endl;
 	exit(0);
 
 }
-void GameManager::Lose() 
+void GameManager::Lose()
 {
 	cout << "Вы проиграли" << endl;
 	exit(0);

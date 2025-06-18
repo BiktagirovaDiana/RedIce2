@@ -11,11 +11,11 @@ class Level_2
 {
 private:
     int Killers = 0;
-    Shop Shop;
+    Shop& shop;
     Enemies enemy;
 
 public:
-    Level_2() : enemy(60) {}
+    Level_2(Shop& shopRef) : shop(shopRef), enemy(60) {}
 
     void StartLevel();
     // атака
