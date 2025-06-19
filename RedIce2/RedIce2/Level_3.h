@@ -5,13 +5,16 @@
 #include "Shop.h"
 #include "Enemies.h"
 
+class Shop;
+
 class Level_3
 {
 private:
-	Shop shop;
+	Shop& shop;
 	Enemies enemy;
 public:
-	Level_3() : enemy(40) {}
+	Level_3(Shop& shopRef) : shop(shopRef), enemy(40) {}
+
 	void StartLevel();
 	void Meeting();
 	void NoMeeting();
@@ -21,4 +24,3 @@ public:
 	void Laboratory();
 	void KidnapScientists();
 };
-

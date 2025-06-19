@@ -2,18 +2,20 @@
 #include "Text.h"
 #include "PlayerController.h"
 #include "GameManager.h"
-#include "Shop.h"
+//#include "Shop.h"
 #include "Enemies.h"
+
+class Shop;
 
 class Level_1
 {
 private:
     int Killers = 0;
-    Shop shop;
+    Shop& shop;  // ссылка должна быть инициализирована
     Enemies enemy;
 
 public:
-    Level_1() : enemy(40) {}
+    Level_1(Shop& shopRef) : shop(shopRef), enemy(40) {}
 
     void StartLevel();
     // стратегии
@@ -27,5 +29,6 @@ public:
     void EnemysLair();
     void StrategyLair();
 };
+
 
 
