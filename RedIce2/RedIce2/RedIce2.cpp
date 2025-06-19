@@ -7,5 +7,5 @@
 int main()
 {
 	setlocale(LC_ALL, "Russian");
-	GameManager::StartLevel5();
+	GameManager::StartLevel1();
 }

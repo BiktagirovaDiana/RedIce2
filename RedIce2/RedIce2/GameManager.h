@@ -4,6 +4,7 @@
 #include "Level_3.h"
 #include "Level_4.h"
 #include "Level_5.h"
+#include "Text.h"
 
 #include <iostream>
 using std::cout;

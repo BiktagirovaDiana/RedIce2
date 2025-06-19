@@ -1,6 +1,10 @@
 ﻿#include "Text.h"
 
 // Уровень 1 
+void Text::Continue()
+{
+	cout << "Нажмите любую кнопку чтобы продолжить" << endl;
+}
 void Text::Level1::HelloPablo1()
 {
 	cout << "Пабло:" << endl;

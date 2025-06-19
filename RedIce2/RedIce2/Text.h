@@ -7,7 +7,7 @@ using std::endl;
 class Text
 {
 public:
-
+	static void Continue();
 	struct Level1
 	{
 		static void HelloPablo1();
