@@ -2,7 +2,6 @@
 #include "Text.h"
 #include "PlayerController.h"
 #include "GameManager.h"
-//#include "Shop.h"
 #include "Enemies.h"
 
 class Shop;

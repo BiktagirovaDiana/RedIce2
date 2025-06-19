@@ -1,1 +1,18 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(439,5): error MSB8020: Не удается найти средства сборки для v143 (набор инструментов платформы = "v143"). Чтобы выполнить сборку с использованием средств сборки v143 установите средства сборки v143.  Кроме того, можно выполнить обновление до текущей версии средств Visual Studio, перейдя в меню "Проект" или щелкнув решение правой кнопкой мыши и выбрав "Обновить решение...".
+﻿  Enemies.cpp
+  GameManager.cpp
+  Level_1.cpp
+  Level_2.cpp
+  Level_3.cpp
+  Level_4.cpp
+  Level_5.cpp
+  PlayerController.cpp
+  RedIce2.cpp
+  Shop.cpp
+  Text.cpp
+D:\GitHub\RedIce2\RedIce2\RedIce2\Text.cpp(40,10): warning C4566: символ, представленный универсальным именем символа "\u2003", невозможно представить в текущей кодовой странице (1251)
+D:\GitHub\RedIce2\RedIce2\RedIce2\Text.cpp(41,3): warning C4566: символ, представленный универсальным именем символа "\u2003", невозможно представить в текущей кодовой странице (1251)
+D:\GitHub\RedIce2\RedIce2\RedIce2\Text.cpp(46,10): warning C4566: символ, представленный универсальным именем символа "\u2003", невозможно представить в текущей кодовой странице (1251)
+D:\GitHub\RedIce2\RedIce2\RedIce2\Text.cpp(47,3): warning C4566: символ, представленный универсальным именем символа "\u2003", невозможно представить в текущей кодовой странице (1251)
+D:\GitHub\RedIce2\RedIce2\RedIce2\Text.cpp(80,10): warning C4566: символ, представленный универсальным именем символа "\u2003", невозможно представить в текущей кодовой странице (1251)
+  Создание кода...
+  RedIce2.vcxproj -> D:\GitHub\RedIce2\RedIce2\x64\Debug\RedIce2.exe

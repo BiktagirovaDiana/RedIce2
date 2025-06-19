@@ -80,7 +80,7 @@ void Level_4::Raid()
 				GameManager::Lose();
 			}
 			else {
-				cout << "У вас нет рпг" << endl;
+				cout << "у вас нет рпг" << endl;
 				Raid();
 			}
 		case 2:
@@ -91,7 +91,7 @@ void Level_4::Raid()
 				GameManager::Lose();
 			}
 			else {
-				cout << "У вас нет гранат (или их недостаточно)" << endl;
+				cout << "у вас нет гранат(или их недостаточно)" << endl;
 				Raid();
 			}
 
