@@ -16,6 +16,6 @@ public:
 	void WaitRaid();
 private:
 	Text Text;
+
 	//GameManager GameManager;
 };
-

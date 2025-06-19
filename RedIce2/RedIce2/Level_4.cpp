@@ -59,11 +59,55 @@ void Level_4::Raid()
 	{
 	case 1:
 		Text::Level4::Warning();
+		if (PlayerController::getGrenade() < 3 and PlayerController::getRPG() < 2)
+		{
+			Shop::BuyOrNot();
 
-		//Shop::BuyOrNor();
+			if (PlayerController::getGrenade() < 3 and PlayerController::getRPG() < 2)
+			{
+				GameManager::Lose();
+			}
+		}
+		Text::Level4::Trap();
+		cin >> choice;
+		switch (choice)
+		{
+		case 1:
+			if (PlayerController::getRPG() >= 1)
+			{
+				PlayerController::setRPG(PlayerController::getRPG() - 1);
+				Text::Level4::PoliceWin();
+				GameManager::Lose();
+			}
+			else {
+				cout << "Ó âàñ íåò ðïã" << endl;
+				Raid();
+			}
+		case 2:
+			if (PlayerController::getGrenade() >= 3)
+			{
+				PlayerController::setGrenade(PlayerController::getGrenade() - 3);
+				Text::Level4::PoliceWin();
+				GameManager::Lose();
+			}
+			else {
+				cout << "Ó âàñ íåò ãðàíàò (èëè èõ íåäîñòàòî÷íî)" << endl;
+				Raid();
+			}
+
+		default:
+			cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+			Raid();
+			break;
+		}
+
 		break;
 	case 2:
 		WaitRaid();
+		break;
+	default:
+		cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+		Raid();
 		break;
 	}
 }
@@ -81,6 +125,10 @@ void Level_4::WaitRaid()
 	case 2:
 		Text::Level4::Fight();
 		GameManager::Lose();
+		break;
+	default:
+		cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+		WaitRaid();
 		break;
 	}
 
