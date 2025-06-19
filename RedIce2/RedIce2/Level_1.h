@@ -14,7 +14,7 @@ private:
     Enemies enemy;
 
 public:
-    Level_1(Shop& shopRef) : shop(shopRef), enemy(40) {}
+    Level_5(Shop& shopRef) : shop(shopRef), enemy(100) {}
 
     void StartLevel();
     // стратегии
