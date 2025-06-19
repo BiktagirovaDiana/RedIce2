@@ -1,9 +1,29 @@
 #pragma once
 #include "Text.h"
+#include "PlayerController.h"
+#include "GameManager.h"
+#include "Enemies.h"
+
+class GameManager;
+class Shop;
 
 class Level_5
 {
+private:
+	int Killers = 0;
+	Shop& shop;  
+	Enemies enemy;
 public:
-	void StartLevel();
-};
+	Level_5(Shop& shopRef) : shop(shopRef), enemy(40) {}
 
+	void StartLevel();
+	void Metting();
+	void AttackChapo();
+	void Friend();
+	void Trap();
+	void AttackPlane();
+	void AttackPlane2();
+	void TrapStrategy();
+	void TrapMargo();
+	void DeathMargo();
+};

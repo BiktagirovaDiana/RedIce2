@@ -1,5 +1,4 @@
-﻿  Enemies.cpp
-  GameManager.cpp
+﻿  GameManager.cpp
   Level_1.cpp
   Level_2.cpp
   Level_3.cpp
@@ -8,11 +7,13 @@
   PlayerController.cpp
   RedIce2.cpp
   Shop.cpp
-  Text.cpp
-D:\GitHub\RedIce2\RedIce2\RedIce2\Text.cpp(40,10): warning C4566: символ, представленный универсальным именем символа "\u2003", невозможно представить в текущей кодовой странице (1251)
-D:\GitHub\RedIce2\RedIce2\RedIce2\Text.cpp(41,3): warning C4566: символ, представленный универсальным именем символа "\u2003", невозможно представить в текущей кодовой странице (1251)
-D:\GitHub\RedIce2\RedIce2\RedIce2\Text.cpp(46,10): warning C4566: символ, представленный универсальным именем символа "\u2003", невозможно представить в текущей кодовой странице (1251)
-D:\GitHub\RedIce2\RedIce2\RedIce2\Text.cpp(47,3): warning C4566: символ, представленный универсальным именем символа "\u2003", невозможно представить в текущей кодовой странице (1251)
-D:\GitHub\RedIce2\RedIce2\RedIce2\Text.cpp(80,10): warning C4566: символ, представленный универсальным именем символа "\u2003", невозможно представить в текущей кодовой странице (1251)
   Создание кода...
+D:\GitHub\RedIce2\RedIce2\RedIce2\Level_5.cpp(26,1): warning C4717: Level_5::StartLevel: рекурсия на всех путях выполнения, функция вызовет переполнение стека
+D:\GitHub\RedIce2\RedIce2\RedIce2\Level_5.cpp(112,1): warning C4717: Level_5::AttackPlane: рекурсия на всех путях выполнения, функция вызовет переполнение стека
+D:\GitHub\RedIce2\RedIce2\RedIce2\Level_5.cpp(44,1): warning C4717: Level_5::Metting: рекурсия на всех путях выполнения, функция вызовет переполнение стека
+D:\GitHub\RedIce2\RedIce2\RedIce2\Level_5.cpp(63,1): warning C4717: Level_5::AttackChapo: рекурсия на всех путях выполнения, функция вызовет переполнение стека
+D:\GitHub\RedIce2\RedIce2\RedIce2\Level_5.cpp(83,1): warning C4717: Level_5::Friend: рекурсия на всех путях выполнения, функция вызовет переполнение стека
+D:\GitHub\RedIce2\RedIce2\RedIce2\Level_5.cpp(147,1): warning C4717: Level_5::TrapStrategy: рекурсия на всех путях выполнения, функция вызовет переполнение стека
+D:\GitHub\RedIce2\RedIce2\RedIce2\Level_5.cpp(164,1): warning C4717: Level_5::TrapMargo: рекурсия на всех путях выполнения, функция вызовет переполнение стека
+D:\GitHub\RedIce2\RedIce2\RedIce2\Level_5.cpp(204,1): warning C4717: Level_5::DeathMargo: рекурсия на всех путях выполнения, функция вызовет переполнение стека
   RedIce2.vcxproj -> D:\GitHub\RedIce2\RedIce2\x64\Debug\RedIce2.exe

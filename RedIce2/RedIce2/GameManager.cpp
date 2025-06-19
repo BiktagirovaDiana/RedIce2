@@ -4,7 +4,7 @@ Level_1 GameManager::Level1(GameManager::shop);
 Level_2 GameManager::Level2(GameManager::shop);
 Level_3 GameManager::Level3(GameManager::shop);
 Level_4 GameManager::Level4(GameManager::shop);
-Level_5 GameManager::Level5;
+Level_5 GameManager::Level5(GameManager::shop);
 
 
 void GameManager::StartLevel1()
