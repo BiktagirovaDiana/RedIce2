@@ -68,7 +68,7 @@ void Shop::ChoiceBuy()
 	}
 
 }
-void Shop::BuyOrNor() {
+void Shop::BuyOrNot() {
 	cout << "Приобрести дополнительное оружие?" << endl;
 	cout << "1: Нет" << endl;
 	cout << "2: Так уж и быть" << endl;

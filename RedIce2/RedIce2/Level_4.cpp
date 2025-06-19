@@ -61,7 +61,7 @@ void Level_4::Raid()
 		Text::Level4::Warning();
 		if (PlayerController::getGrenade() < 3 and PlayerController::getRPG() < 2)
 		{
-			Shop::BuyOrNot();
+			shop.BuyOrNot();
 
 			if (PlayerController::getGrenade() < 3 and PlayerController::getRPG() < 2)
 			{

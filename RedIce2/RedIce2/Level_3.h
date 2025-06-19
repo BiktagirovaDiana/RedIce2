@@ -11,7 +11,7 @@ private:
 	Shop shop;
 	Enemies enemy;
 public:
-	Level_2() : enemy(40) {}
+	Level_3() : enemy(40) {}
 	void StartLevel();
 	void Meeting();
 	void NoMeeting();

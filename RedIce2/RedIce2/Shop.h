@@ -23,7 +23,7 @@ public:
 
 	static void InfoShop();
 	static void ChoiceBuy();
-	static void BuyOrNor();
+	static void BuyOrNot();
 	static void BuyCartridges();
 	static void BuyGrenade();
 	static void BuyRPG();
