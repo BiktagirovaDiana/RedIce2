@@ -26,4 +26,11 @@ public:
 	void TrapStrategy();
 	void TrapMargo();
 	void DeathMargo();
+	void Surveillance();
+	void AttackStartegy();
+	void AttackStartegy2();
+	void AttackStartegy3();
+	void ifDefense();
+	void HowContiniue();
+	void RPGorGrenade();
 };

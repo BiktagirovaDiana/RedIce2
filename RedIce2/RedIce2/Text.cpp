@@ -528,7 +528,7 @@ void Text::Level5::DeathMargo()
 void Text::Level5::WinSad()
 {
 	cout << "Поздравлю, мистер Корлеоне, вы стали главой самого могущественного картеля в  мире! " <<
-		"Но какой ценой, вы лишили себя самого главного - любвьи!" << endl;
+		"Но какой ценой, вы лишили себя самого главного - любви!" << endl;
 }
 
 void Text::Level5::NeutralPlace()
@@ -606,7 +606,10 @@ void Text::Level5::HowContiniue()
 	cout << "2: Использовать РПГ" << endl;
 	cout << "3: Использовать гранаты" << endl;
 }
-
+void Text::Level5::PoorPreparation() 
+{
+	cout << "Из - за вашего халатного подхода к подготовке, вас уничтожили" << endl;
+}
 void Text::Level5::ifPatrons()
 {
 	cout << "Люди Чапо использовали рпг и гранаты  и уничтожил вас" << endl;

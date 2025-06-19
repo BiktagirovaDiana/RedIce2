@@ -147,6 +147,8 @@ public:
 		static void RPGorGrenade();
 		static void NoRPG();
 		static void WinFinal();
+		static void PoorPreparation();
+
 	};
 };
 
