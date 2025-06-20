@@ -1,7 +1,6 @@
 #include "GameManager.h"
-#include <cstdlib> 
-#include <limits>
-#include <conio.h>
+#include <cstdlib> //для чистки консоли
+#include <conio.h> //для _getch();
 Shop GameManager::shop;
 
 Level_1 GameManager::Level1(GameManager::shop);
@@ -51,6 +50,7 @@ void GameManager::StartLevel5()
 {
 	char choice;
 	Level5.StartLevel();
+	cin >> choice;
 	Win();
 }
 void GameManager::Win()

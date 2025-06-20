@@ -36,7 +36,6 @@ void Shop::InfoShop() {
 	{
 		cout << "РПГ доступен на 4 уровне" << endl;
 	}
-
 }
 void Shop::ChoiceBuy()
 {
@@ -58,6 +57,8 @@ void Shop::ChoiceBuy()
 		BuyRPG();
 		break;
 	default:
+		Text::DefaultButton();
+		ChoiceBuy();
 		break;
 	}
 
@@ -72,13 +73,15 @@ void Shop::BuyOrNot() {
 	switch (choice)
 	{
 	case 1:
-		break;
 
+		break;
 	case 2:
 		InfoShop();
 		ChoiceBuy();
 
 	default:
+		Text::DefaultButton();
+		BuyOrNot();
 		break;
 	}
 }
@@ -131,3 +134,4 @@ void Shop::BuyRPG() //Покупка РПГ
 	else {
 		cout << "Недостаточно денег" << endl;
 	}
+}

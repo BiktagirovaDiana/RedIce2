@@ -181,6 +181,7 @@ void Level_5::TrapMargo() //использовать марго
 	switch (choice)
 	{
 	case 1: //убить марго и чапо
+		DeathMargo();
 		break;
 
 	case 2: //не убивать

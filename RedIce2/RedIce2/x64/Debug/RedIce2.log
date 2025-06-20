@@ -1,3 +1,8 @@
 ﻿  GameManager.cpp
-D:\GitHub\RedIce2\RedIce2\RedIce2\GameManager.cpp(51,7): warning C4101: choice: неиспользованная локальная переменная
+  Text.cpp
+D:\GitHub\RedIce2\RedIce2\RedIce2\Text.cpp(58,3): warning C4566: символ, представленный универсальным именем символа "\u2003", невозможно представить в текущей кодовой странице (1251)
+D:\GitHub\RedIce2\RedIce2\RedIce2\Text.cpp(63,10): warning C4566: символ, представленный универсальным именем символа "\u2003", невозможно представить в текущей кодовой странице (1251)
+D:\GitHub\RedIce2\RedIce2\RedIce2\Text.cpp(64,3): warning C4566: символ, представленный универсальным именем символа "\u2003", невозможно представить в текущей кодовой странице (1251)
+D:\GitHub\RedIce2\RedIce2\RedIce2\Text.cpp(97,10): warning C4566: символ, представленный универсальным именем символа "\u2003", невозможно представить в текущей кодовой странице (1251)
+  Создание кода...
   RedIce2.vcxproj -> D:\GitHub\RedIce2\RedIce2\x64\Debug\RedIce2.exe
