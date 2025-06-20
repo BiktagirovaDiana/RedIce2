@@ -1,60 +1,133 @@
 #include "Shop.h"
-#include <iostream>
+using std::cout;
+using std::cin;
+using std::endl;
+using std::string;
 
+int Shop::Level = 1;
+
+int Shop::PriceGun = 800;
 int Shop::PriceCartridges = 500;
 int Shop::PriceGrenade = 1500;
 int Shop::PriceRPG = 2000;
 
-void Shop::DisplayShop() 
+
+void Shop::InfoShop() {
+	cout << "========Магазин=======" << endl;
+	cout << "Патроны: " << endl;
+	cout << "Цена: " << PriceCartridges << endl;
+
+	if (Level >= 2)
+	{
+		cout << "Гранаты:" << endl;
+		cout << "Количество: 4" << endl;
+		cout << "Цена: " << PriceGrenade << endl;
+	}
+	else {
+		cout << "Гранаты доступны на 2 уровне" << endl;
+	}
+	if (Level >= 4)
+	{
+		cout << "РПГ:" << endl;
+		cout << "Количество: 3" << endl;
+		cout << "Цена: " << PriceRPG << endl;
+	}
+	else 
+	{
+		cout << "РПГ доступен на 4 уровне" << endl;
+	}
+
+}
+void Shop::ChoiceBuy()
 {
-    std::cout << "=== МАГАЗИН ОРУЖИЯ ===" << std::endl;
-    std::cout << "1. Патроны (8 шт): $" << PriceCartridges << std::endl;
-    std::cout << "2. Граната (4 шт): $" << PriceGrenade << std::endl;
-    std::cout << "3. РПГ (3 шт): $" << PriceRPG << std::endl;
+	cout << "Выберите что купить" << endl;
+	cout << "1 - Патроны" << endl;
+	cout << "2 - Гранаты" << endl;
+	cout << "3 - РПГ" << endl;
+	int choice = 0;
+	cin >> choice;
+	switch (choice)
+	{
+	case 1:
+		BuyCartridges();
+		break;
+	case 2:
+		BuyGrenade();
+		break;
+	case 3:
+		BuyRPG();
+		break;
+	default:
+		break;
+	}
+
+}
+void Shop::BuyOrNot() {
+	cout << "Приобрести дополнительное оружие?" << endl;
+	cout << "1: Нет" << endl;
+	cout << "2: Так уж и быть" << endl;
+
+	int choice = 0;
+	cin >> choice;
+	switch (choice)
+	{
+	case 1:
+		break;
+
+	case 2:
+		InfoShop();
+		ChoiceBuy();
+
+	default:
+		break;
+	}
+}
+void Shop::BuyCartridges() //Покупка патрон
+{
+	if (PlayerController::getMoney() >= PriceCartridges)
+	{
+		int a = PlayerController::getMoney();
+		int b = a - PriceCartridges;
+		PlayerController::setMoney(b);
+		int c = PlayerController::getGun();
+		int d = c += 8;
+		PlayerController::setMoney(d);
+		cout << "Патроны: +8" << endl;
+	}
+	else {
+		cout << "Недостаточно денег" << endl;
+	}
 }
 
-bool Shop::CanAfford(int price) 
+void Shop::BuyGrenade() //Покупка гранат
 {
-    return PlayerController::getMoney() >= price;
-}
+	if (PlayerController::getMoney() >= PriceGrenade)
+	{
+		int a = PlayerController::getMoney();
+		int b = a - PriceGrenade;
+		PlayerController::setMoney(b);
+		int c = PlayerController::getGrenade();
+		int d = c += 4;
+		PlayerController::setMoney(d);
+		cout << "Гранаты: +4" << endl;
 
-void Shop::BuyCartridges() 
-{
-    if (CanAfford(PriceCartridges)) 
-    {
-        PlayerController::setMoney(PlayerController::getMoney() - PriceCartridges);
-        PlayerController::setGun(PlayerController::getGun() + 8);
-        std::cout << "Куплено 8 патронов!" << std::endl;
-    }
-    else 
-    {
-        std::cout << "Недостаточно денег!" << std::endl;
-    }
+	}
+	else {
+		cout << "Недостаточно денег" << endl;
+	}
 }
+void Shop::BuyRPG() //Покупка РПГ
+{
+	if (PlayerController::getMoney() >= PriceRPG)
+	{
+		int a = PlayerController::getMoney();
+		int b = a - PriceRPG;
+		PlayerController::setMoney(b);
+		int c = PlayerController::getRPG();
+		int d = c += 3;
 
-void Shop::BuyGrenade() 
-{
-    if (CanAfford(PriceGrenade)) 
-    {
-        PlayerController::setMoney(PlayerController::getMoney() - PriceGrenade);
-        PlayerController::setGrenade(PlayerController::getGrenade() + 1);
-        std::cout << "Куплена 4 гранаты!" << std::endl;
-    }
-    else {
-        std::cout << "Недостаточно денег!" << std::endl;
-    }
-}
-
-void Shop::BuyRPG() 
-{
-    if (CanAfford(PriceRPG)) 
-    {
-        PlayerController::setMoney(PlayerController::getMoney() - PriceRPG);
-        PlayerController::setRPG(PlayerController::getRPG() + 1);
-        std::cout << "Куплен 3 РПГ!" << std::endl;
-    }
-    else 
-    {
-        std::cout << "Недостаточно денег!" << std::endl;
-    }
-}
+		cout << "РПГ: +3" << endl;
+	}
+	else {
+		cout << "Недостаточно денег" << endl;
+	}

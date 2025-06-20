@@ -6,7 +6,7 @@ class Shop
 {
 private:
 	static int Level;
-	//Цены
+	
 	static int PriceGun;
 	static int PriceCartridges;
 	static int PriceGrenade;
