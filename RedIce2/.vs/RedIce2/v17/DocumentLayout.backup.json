@@ -62,8 +62,7 @@
               "RelativeToolTip": "RedIce2\\Enemies.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-19T16:55:11.523Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-19T16:55:11.523Z"
             },
             {
               "$type": "Document",
@@ -71,9 +70,9 @@
               "Title": "GameManager.cpp",
               "DocumentMoniker": "D:\\GitHub\\RedIce2\\RedIce2\\RedIce2\\GameManager.cpp",
               "RelativeDocumentMoniker": "RedIce2\\GameManager.cpp",
-              "ToolTip": "D:\\GitHub\\RedIce2\\RedIce2\\RedIce2\\GameManager.cpp*",
-              "RelativeToolTip": "RedIce2\\GameManager.cpp*",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAADAAAAANAAAAAAAAAA==",
+              "ToolTip": "D:\\GitHub\\RedIce2\\RedIce2\\RedIce2\\GameManager.cpp",
+              "RelativeToolTip": "RedIce2\\GameManager.cpp",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAEMAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-06-19T16:50:20.49Z",
               "EditorCaption": ""
@@ -88,8 +87,7 @@
               "RelativeToolTip": "RedIce2\\GameManager.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-19T16:49:20.666Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-19T16:49:20.666Z"
             },
             {
               "$type": "Document",
@@ -101,8 +99,7 @@
               "RelativeToolTip": "RedIce2\\RedIce2.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-19T07:46:17.911Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-19T07:46:17.911Z"
             },
             {
               "$type": "Document",
@@ -138,8 +135,7 @@
               "RelativeToolTip": "RedIce2\\Level_5.cpp",
               "ViewState": "AgIAAKABAAAAAAAAAADwv6cBAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-19T07:47:55.402Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-19T07:47:55.402Z"
             },
             {
               "$type": "Document",
@@ -151,8 +147,7 @@
               "RelativeToolTip": "RedIce2\\Text.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-19T07:48:01.055Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-19T07:48:01.055Z"
             },
             {
               "$type": "Document",
@@ -164,8 +159,7 @@
               "RelativeToolTip": "RedIce2\\Text.h",
               "ViewState": "AgIAAAEAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-19T15:54:46.301Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-19T15:54:46.301Z"
             },
             {
               "$type": "Document",
@@ -177,8 +171,7 @@
               "RelativeToolTip": "RedIce2\\Level_1.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4BAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-19T04:24:16.897Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-19T04:24:16.897Z"
             }
           ]
         }
