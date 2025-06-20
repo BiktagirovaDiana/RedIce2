@@ -174,7 +174,7 @@ void Level_1::StrategyDesert()
         if (PlayerController::getGun() >= 4)
         {
             Text::Level1::DesertAttak();
-            enemy.takeDamage(20, 1);
+            enemy.takeDamage(1, 4);
             PlayerController::setGun(PlayerController::getGun() - 4);
             LoseOrWin();
         }
@@ -188,7 +188,7 @@ void Level_1::StrategyDesert()
         if (PlayerController::getGun() >= 4)
         {
             Text::Level1::DesertDefense();
-            enemy.takeDamage(20, 1);
+            enemy.takeDamage(1, 4);
             PlayerController::setGun(PlayerController::getGun() - 4);
             PlayerController::setHP(PlayerController::getHP() - 20);
             LoseOrWin();
@@ -214,7 +214,7 @@ void Level_1::LoseOrWin()
         if (PlayerController::getGun() >= 4)
         {
             Text::Level1::Survive();
-            enemy.takeDamage(20, 1);
+            enemy.takeDamage(1, 4);
             PlayerController::setGun(PlayerController::getGun() - 4);
             Text::Level1::Win1();
             PlayerController::setMoney(PlayerController::getMoney() + 1000);
@@ -298,7 +298,7 @@ void Level_1::StrategyLair()
 
         int choice = 0;
         Text::Level1::AttakLair();
-        enemy.takeDamage(10, 1);
+        enemy.takeDamage(1, 2);
         PlayerController::InfoPlayer();
         cin >> choice;
 

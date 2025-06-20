@@ -88,7 +88,7 @@ void Level_4::Raid()
 			if (PlayerController::getRPG() >= 3)
 			{
 				PlayerController::setRPG(PlayerController::getRPG() - 3);
-				enemy.takeDamage(60, 3);
+				enemy.takeDamage(3, 3);
 				Text::Level4::PoliceWin();
 				GameManager::Lose();
 			}
@@ -101,7 +101,7 @@ void Level_4::Raid()
 			if (PlayerController::getGrenade() >= 6)
 			{
 				PlayerController::setGrenade(PlayerController::getGrenade() - 6);
-				enemy.takeDamage(60, 6);
+				enemy.takeDamage(6, 6);
 				Text::Level4::PoliceWin();
 				GameManager::Lose();
 			}

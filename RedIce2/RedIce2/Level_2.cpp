@@ -66,7 +66,7 @@ void Level_2::Trap()
         break;
     case 2:
         Text::Level2::Trap2();
-        enemy.takeDamage(Shop::GetDamageTrap(), 4);
+        enemy.applyTrapDamage();
         PeopleAttack();
         break;
     default:
@@ -174,7 +174,7 @@ void Level_2::StrategyAttack()
         if (PlayerController::getGun() >= 4)
         {
             PlayerController::setGun(PlayerController::getGun() - 4);
-            enemy.takeDamage(20, 1);
+            enemy.takeDamage(1, 4);
             PlayerController::InfoPlayer();
             ContinueStrat();
         }
@@ -190,7 +190,7 @@ void Level_2::StrategyAttack()
         if (PlayerController::getGun() >= 2)
         {
             PlayerController::setGun(PlayerController::getGun() - 2);
-            enemy.takeDamage(10, 1);
+            enemy.takeDamage(1, 2);
             PlayerController::InfoPlayer();
             ContinueStrat();
         }
@@ -219,7 +219,7 @@ void Level_2::ContinueStrat()
         if (PlayerController::getGrenade() >= 2)
         {
             PlayerController::setGrenade(PlayerController::getGrenade() - 2);
-            enemy.takeDamage(20, 2);
+            enemy.takeDamage(2, 2);
             PlayerController::InfoPlayer();
             Text::Level2::ifGrenade();
             FinalPart();
@@ -234,7 +234,7 @@ void Level_2::ContinueStrat()
         if (PlayerController::getGun() >= 4)
         {
             PlayerController::setGun(PlayerController::getGun() - 4);
-            enemy.takeDamage(20, 1);
+            enemy.takeDamage(1, 4);
             PlayerController::InfoPlayer();
             Text::Level2::ifGuns();
             FinalPart();
@@ -274,7 +274,7 @@ void Level_2::FinalPart()
             if (PlayerController::getGun() >= 4)
             {
                 PlayerController::setGun(PlayerController::getGun() - 4);
-                enemy.takeDamage(20, 1);
+                enemy.takeDamage(1, 4);
                 Text::Level2::WinL2();
                 PlayerController::setMoney(PlayerController::getMoney() + 2000);
                 PlayerController::setInfluence(PlayerController::getInfluence() + 10);
@@ -291,7 +291,7 @@ void Level_2::FinalPart()
             if (PlayerController::getGrenade() >= 2)
             {
                 PlayerController::setGrenade(PlayerController::getGrenade() - 2);
-                enemy.takeDamage(20, 2);
+                enemy.takeDamage(2, 2);
                 Text::Level2::WinL2();
                 PlayerController::setMoney(PlayerController::getMoney() + 2000);
                 PlayerController::setHP(PlayerController::getHP() + 20);

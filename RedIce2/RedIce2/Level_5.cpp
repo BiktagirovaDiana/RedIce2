@@ -206,7 +206,7 @@ void Level_5::DeathMargo()
 		if (PlayerController::getRPG() >= 5)
 		{
 			PlayerController::setRPG(PlayerController::getRPG() - 5);
-			enemy.takeDamage(100, 3);
+			enemy.takeDamage(3, 5);
 			Text::Level5::WinSad();
 		}
 		else
@@ -219,7 +219,7 @@ void Level_5::DeathMargo()
 		if (PlayerController::getGrenade() >= 10)
 		{
 			PlayerController::setGrenade(PlayerController::getGrenade() - 10);
-			enemy.takeDamage(100, 2);
+			enemy.takeDamage(2, 10);
 			Text::Level5::WinSad();
 		}
 		else
@@ -232,7 +232,7 @@ void Level_5::DeathMargo()
 		if (PlayerController::getGun() >= 20)
 		{
 			PlayerController::setGun(PlayerController::getGun() - 20);
-			enemy.takeDamage(100, 1);
+			enemy.takeDamage(1, 20);
 			Text::Level5::WinSad();
 		}
 		else
@@ -259,7 +259,7 @@ void Level_5::Surveillance()
 		if (PlayerController::getRPG() >= 5)
 		{
 			PlayerController::setRPG(PlayerController::getRPG() - 5);
-			enemy.takeDamage(100, 3);
+			enemy.takeDamage(3, 5);
 			Text::Level5::WinShort();
 		}
 		else
@@ -272,7 +272,7 @@ void Level_5::Surveillance()
 		if (PlayerController::getGrenade() >= 10)
 		{
 			PlayerController::setGrenade(PlayerController::getGrenade() - 10);
-			enemy.takeDamage(100, 2);
+			enemy.takeDamage(2, 10);
 			Text::Level5::WinShort();
 		}
 		else
@@ -285,7 +285,7 @@ void Level_5::Surveillance()
 		if (PlayerController::getGun() >= 20)
 		{
 			PlayerController::setGun(PlayerController::getGun() - 20);
-			enemy.takeDamage(100, 1);
+			enemy.takeDamage(1, 20);
 			Text::Level5::WinShort();
 		}
 		else
@@ -371,7 +371,7 @@ void Level_5::ifDefense()
 		Text::Level5::ifDefense();
 		PlayerController::setGun(PlayerController::getGun() - 4);
 		PlayerController::setHP(PlayerController::getHP() - 20);
-		enemy.takeDamage(20, 1);
+		enemy.takeDamage(1, 4);
 		HowContiniue();
 	}
 	else
@@ -397,7 +397,7 @@ void Level_5::HowContiniue()
 			{
 				PlayerController::setGun(PlayerController::getGun() - 8);
 				PlayerController::setHP(PlayerController::getHP() - 20);
-				enemy.takeDamage(40, 1);
+				enemy.takeDamage(1, 8);
 				Text::Level5::ifPatrons();
 				GameManager::Lose();
 			}
@@ -412,7 +412,7 @@ void Level_5::HowContiniue()
 			{
 				PlayerController::setRPG(PlayerController::getRPG() - 2);
 				PlayerController::setHP(PlayerController::getHP() - 20);
-				enemy.takeDamage(40, 3);
+				enemy.takeDamage(3, 2);
 				RPGorGrenade();
 			}
 			else
@@ -426,7 +426,7 @@ void Level_5::HowContiniue()
 			{
 				PlayerController::setGrenade(PlayerController::getGrenade() - 4);
 				PlayerController::setHP(PlayerController::getHP() - 20);
-				enemy.takeDamage(40, 2);
+				enemy.takeDamage(2, 4);
 				RPGorGrenade();
 			}
 			else
@@ -461,7 +461,7 @@ void Level_5::RPGorGrenade()
 		if (PlayerController::getGun() >= 3)
 		{
 			PlayerController::setGun(PlayerController::getGun() - 3);
-			enemy.takeDamage(15, 1);
+			enemy.takeDamage(1, 3);
 			Text::Level5::NoRPG();
 			GameManager::Lose();
 		}
@@ -475,7 +475,7 @@ void Level_5::RPGorGrenade()
 		if (PlayerController::getGrenade() >= 3)
 		{
 			PlayerController::setGrenade(PlayerController::getGrenade() - 3);
-			enemy.takeDamage(30, 2);
+			enemy.takeDamage(2, 3);
 			Text::Level5::NoRPG();
 			GameManager::Lose();
 		}
@@ -489,7 +489,7 @@ void Level_5::RPGorGrenade()
 		if (PlayerController::getRPG() >= 2)
 		{
 			PlayerController::setRPG(PlayerController::getRPG() - 2);
-			enemy.takeDamage(40, 3);
+			enemy.takeDamage(3, 2);
 			PlayerController::setInfluence(PlayerController::getInfluence() + 100);
 			PlayerController::setMoney(PlayerController::getMoney() + 1000);
 			PlayerController::setHP(100);

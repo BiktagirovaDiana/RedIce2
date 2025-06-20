@@ -13,9 +13,10 @@ private:
     int Killers = 0;
     Shop& shop;
     Enemies enemy;
+    int spent;
 
 public:
-    Level_2(Shop& shopRef) : shop(shopRef), enemy(60) {}
+    Level_2(Shop& shopRef) : shop(shopRef), enemy(60), spent(0) {}
 
     void StartLevel();
     // атака

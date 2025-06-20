@@ -14,8 +14,9 @@ private:
 	int Killers = 0;
 	Shop& shop;
 	Enemies enemy;
+	int spent;
 public:
-	Level_5(Shop& shopRef) : shop(shopRef), enemy(100) {}
+	Level_5(Shop& shopRef) : shop(shopRef), enemy(100), spent(0) {}
 
 	void StartLevel();
 	void Metting();

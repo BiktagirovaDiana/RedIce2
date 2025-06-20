@@ -1,15 +1,16 @@
 #pragma once
 
-class Enemies
+class Enemies 
 {
 private:
-    int EnemyHP;
+    int EnemyHP; 
 
 public:
-    Enemies(int hp);
+    
+    Enemies(int initialHP);
+
+    void takeDamage(int weaponType, int ammoSpent);
     int getHP() const;
     void setHP(int hp);
-    void takeDamage(int damage, int weaponType);
+    void applyTrapDamage();
 };
-
-

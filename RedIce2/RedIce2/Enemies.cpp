@@ -1,36 +1,52 @@
 #include "Enemies.h"
-#include "Shop.h"
-Enemies::Enemies(int hp) : EnemyHP(hp) {}
+#include <iostream>
 
-int Enemies::getHP() const
+Enemies::Enemies(int initialHP) : EnemyHP(initialHP) {}
+
+
+void Enemies::takeDamage(int weaponType, int ammoSpent) {
+    int damagePerUnit = 0;
+
+    //  урон за единицу боеприпаса
+    switch (weaponType) 
+    {
+    case 1:  // Пистолет (5 HP за патрон)
+        damagePerUnit = 5;
+        break;
+    case 2:  // Граната (10 HP за штуку)
+        damagePerUnit = 10;
+        break;
+    case 3:  // РПГ (20 HP за выстрел)
+        damagePerUnit = 20;
+        break;
+    default:
+        return;
+    }
+
+    // общий урон
+    int totalDamage = damagePerUnit * ammoSpent;
+    EnemyHP -= totalDamage;
+
+    if (EnemyHP < 0) 
+    {
+        EnemyHP = 0;
+    }
+}
+
+void Enemies::applyTrapDamage() 
+{
+    EnemyHP -= 20; 
+    if (EnemyHP < 0) EnemyHP = 0;
+}
+
+int Enemies::getHP() const 
 {
     return EnemyHP;
 }
 
-void Enemies::setHP(int hp)
+void Enemies::setHP(int hp) 
 {
     EnemyHP = hp;
-}
-
-void Enemies::takeDamage(int damage, int weaponType)
-{
-    int finalDamage = damage;
-    switch (weaponType)
-    {
-    case 1:
-        finalDamage = Shop::GetGunDamage();
-        break;
-    case 2:
-        finalDamage = Shop::GetGrenadeDamage();
-        break;
-    case 3:
-        finalDamage = Shop::GetRPGDamage();
-        break;
-    case 4:
-        finalDamage = Shop::GetDamageTrap();
-    }
-    EnemyHP -= finalDamage;
-
     if (EnemyHP < 0)
     {
         EnemyHP = 0;

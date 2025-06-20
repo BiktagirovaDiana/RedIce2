@@ -112,7 +112,7 @@ void Level_3::CleverSpy()
         if (PlayerController::getGun() >= 6)
         {
             PlayerController::setGun(PlayerController::getGun() - 6);
-            enemy.takeDamage(30, 1);
+            enemy.takeDamage(1, 6);
             PlayerController::InfoPlayer();
             Text::Level3::CleverSpy2();
             Laboratory();
@@ -150,7 +150,7 @@ void Level_3::Shooting()
             {
                 PlayerController::setGun(PlayerController::getGun() - 6);
                 PlayerController::InfoPlayer();
-                enemy.takeDamage(30, 1);
+                enemy.takeDamage(1, 6);
                 Laboratory();
             }
             else
@@ -163,7 +163,7 @@ void Level_3::Shooting()
             if (PlayerController::getGrenade() >= 3)
             {
                 PlayerController::setGrenade(PlayerController::getGrenade() - 3);
-                enemy.takeDamage(30, 2);
+                enemy.takeDamage(2, 3);
                 PlayerController::InfoPlayer();
                 Laboratory();
             }

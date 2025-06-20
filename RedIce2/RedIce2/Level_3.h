@@ -12,8 +12,9 @@ class Level_3
 private:
 	Shop& shop;
 	Enemies enemy;
+	int spent;
 public:
-	Level_3(Shop& shopRef) : shop(shopRef), enemy(30) {}
+	Level_3(Shop& shopRef) : shop(shopRef), enemy(30), spent(0) {}
 
 	void StartLevel();
 	void Meeting();

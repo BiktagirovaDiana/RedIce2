@@ -12,11 +12,12 @@ class Level_4
 	int Killers = 0;
 	Shop& shop;
 	Enemies enemy;
+	int spent;
 
 private:
 	Text Text;
 public:
-	Level_4(Shop& shopRef) : shop(shopRef), enemy(60) {}
+	Level_4(Shop& shopRef) : shop(shopRef), enemy(60), spent(0) {}
 	void StartLevel();
 	void PreparationForSearch();
 	void PreparationForSearch2();
