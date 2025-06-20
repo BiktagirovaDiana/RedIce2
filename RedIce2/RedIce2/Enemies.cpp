@@ -4,7 +4,7 @@
 Enemies::Enemies(int initialHP) : EnemyHP(initialHP) {}
 
 
-void Enemies::takeDamage(int weaponType, int ammoSpent) {
+void Enemies::takeDamage(int weaponType, int spent) {
     int damagePerUnit = 0;
 
     //  урон за единицу боеприпаса
@@ -24,7 +24,7 @@ void Enemies::takeDamage(int weaponType, int ammoSpent) {
     }
 
     // общий урон
-    int totalDamage = damagePerUnit * ammoSpent;
+    int totalDamage = damagePerUnit * spent;
     EnemyHP -= totalDamage;
 
     if (EnemyHP < 0) 

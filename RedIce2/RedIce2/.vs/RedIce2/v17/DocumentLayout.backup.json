@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Enemies.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Enemies.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Enemies.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Enemies.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Level_2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Level_2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Level_5.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Level_5.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -31,24 +43,12 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Level_2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Level_2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Level_2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Level_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Level_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Level_1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Level_1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Enemies.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Enemies.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Enemies.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Enemies.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Shop.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -94,63 +94,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Enemies.cpp",
-              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Enemies.cpp",
-              "RelativeDocumentMoniker": "Enemies.cpp",
-              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Enemies.cpp",
-              "RelativeToolTip": "Enemies.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-20T07:29:17.216Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Level_1.h",
-              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Level_1.h",
-              "RelativeDocumentMoniker": "Level_1.h",
-              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Level_1.h",
-              "RelativeToolTip": "Level_1.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-19T04:09:33.206Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Level_1.cpp",
-              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Level_1.cpp",
-              "RelativeDocumentMoniker": "Level_1.cpp",
-              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Level_1.cpp",
-              "RelativeToolTip": "Level_1.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-19T04:11:42.878Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "Level_2.h",
               "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Level_2.h",
               "RelativeDocumentMoniker": "Level_2.h",
               "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Level_2.h",
               "RelativeToolTip": "Level_2.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-06-19T04:10:50.135Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Level_2.cpp",
               "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Level_2.cpp",
               "RelativeDocumentMoniker": "Level_2.cpp",
@@ -158,12 +119,11 @@
               "RelativeToolTip": "Level_2.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-19T04:12:32.095Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-19T04:12:32.095Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Level_3.h",
               "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Level_3.h",
               "RelativeDocumentMoniker": "Level_3.h",
@@ -171,12 +131,11 @@
               "RelativeToolTip": "Level_3.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-19T04:11:18.302Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-19T04:11:18.302Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Level_3.cpp",
               "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Level_3.cpp",
               "RelativeDocumentMoniker": "Level_3.cpp",
@@ -184,12 +143,11 @@
               "RelativeToolTip": "Level_3.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-16T14:22:38.926Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T14:22:38.926Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Level_4.h",
               "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Level_4.h",
               "RelativeDocumentMoniker": "Level_4.h",
@@ -197,12 +155,11 @@
               "RelativeToolTip": "Level_4.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-20T08:04:27.907Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-20T08:04:27.907Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Level_4.cpp",
               "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Level_4.cpp",
               "RelativeDocumentMoniker": "Level_4.cpp",
@@ -210,12 +167,11 @@
               "RelativeToolTip": "Level_4.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-20T08:04:43.516Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-20T08:04:43.516Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Level_5.h",
               "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Level_5.h",
               "RelativeDocumentMoniker": "Level_5.h",
@@ -223,12 +179,61 @@
               "RelativeToolTip": "Level_5.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-20T09:11:46.277Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-20T09:11:46.277Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Enemies.h",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Enemies.h",
+              "RelativeDocumentMoniker": "Enemies.h",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Enemies.h*",
+              "RelativeToolTip": "Enemies.h*",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-20T07:28:32.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Enemies.cpp",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Enemies.cpp",
+              "RelativeDocumentMoniker": "Enemies.cpp",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Enemies.cpp*",
+              "RelativeToolTip": "Enemies.cpp*",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAAYAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-20T07:29:17.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Level_1.cpp",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Level_1.cpp",
+              "RelativeDocumentMoniker": "Level_1.cpp",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Level_1.cpp",
+              "RelativeToolTip": "Level_1.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-19T04:11:42.878Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Level_1.h",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Level_1.h",
+              "RelativeDocumentMoniker": "Level_1.h",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Level_1.h",
+              "RelativeToolTip": "Level_1.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-19T04:09:33.206Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Level_5.cpp",
               "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Level_5.cpp",
               "RelativeDocumentMoniker": "Level_5.cpp",
@@ -241,19 +246,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Enemies.h",
-              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Enemies.h",
-              "RelativeDocumentMoniker": "Enemies.h",
-              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Enemies.h",
-              "RelativeToolTip": "Enemies.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-20T07:28:32.287Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 12,
               "Title": "Shop.cpp",
               "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\RedIce2\\RedIce2\\RedIce2\\Shop.cpp",
@@ -262,8 +254,7 @@
               "RelativeToolTip": "Shop.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-20T07:13:49.752Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-20T07:13:49.752Z"
             },
             {
               "$type": "Document",
@@ -275,8 +266,7 @@
               "RelativeToolTip": "Shop.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-20T07:31:21.007Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-20T07:31:21.007Z"
             },
             {
               "$type": "Document",
@@ -288,8 +278,7 @@
               "RelativeToolTip": "Text.cpp",
               "ViewState": "AgIAAFgCAAAAAAAAAAAAAFgBAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-03T16:38:05.454Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-03T16:38:05.454Z"
             },
             {
               "$type": "Document",
@@ -301,8 +290,7 @@
               "RelativeToolTip": "GameManager.cpp",
               "ViewState": "AgIAAB4AAAAAAAAAAAAAAC4AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-19T04:13:39.687Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-19T04:13:39.687Z"
             },
             {
               "$type": "Document",
@@ -314,8 +302,7 @@
               "RelativeToolTip": "GameManager.h",
               "ViewState": "AgIAABUAAAAAAAAAAAAQwCcAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-19T04:13:14.416Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-19T04:13:14.416Z"
             },
             {
               "$type": "Document",
