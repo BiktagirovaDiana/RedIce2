@@ -4,20 +4,18 @@ int PlayerController::Influence = 60;
 int PlayerController::HP = 100;
 int PlayerController::Money = 5000;
 
-int PlayerController::Gun = 5;
+int PlayerController::Gun = 9;
 int PlayerController::Grenade = 0;
 int PlayerController::RPG = 0;
 
 void PlayerController::InfoPlayer()
 {
-    // Проверка HP перед выводом информации
     if (HP <= 0) {
         cout << "Ваш картель уничтожен! HP упало до 0." << endl;
         GameManager::Lose();
         return;
     }
 
-    // Проверка влияния
     if (Influence < 30) {
         cout << "Ваше влияние упало ниже 30%. Вас больше никто не боится!" << endl;
         GameManager::Lose();
@@ -47,7 +45,6 @@ void PlayerController::InfoPlayer()
     }
 }
 
-// Геттеры остаются без изменений
 int PlayerController::getInfluence() { return Influence; }
 int PlayerController::getHP() { return HP; }
 int PlayerController::getMoney() { return Money; }
@@ -55,7 +52,6 @@ int PlayerController::getGun() { return Gun; }
 int PlayerController::getGrenade() { return Grenade; }
 int PlayerController::getRPG() { return RPG; }
 
-// Сеттеры с проверками
 int PlayerController::setInfluence(int x)
 {
     Influence = x;

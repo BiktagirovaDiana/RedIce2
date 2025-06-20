@@ -3,6 +3,7 @@
 #include "PlayerController.h"
 #include "GameManager.h"
 #include "Enemies.h"
+#include "Shop.h"
 
 class Shop;
 
@@ -10,7 +11,7 @@ class Level_1
 {
 private:
     int Killers = 0;
-    Shop& shop;  // ссылка должна быть инициализирована
+    Shop& shop;
     Enemies enemy;
 
 public:
@@ -28,6 +29,3 @@ public:
     void EnemysLair();
     void StrategyLair();
 };
-
-
-

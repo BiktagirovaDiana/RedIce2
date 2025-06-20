@@ -3,6 +3,7 @@
 #include "PlayerController.h"
 #include "GameManager.h"
 #include "Enemies.h"
+#include "Shop.h"
 
 class GameManager;
 class Shop;
@@ -11,10 +12,10 @@ class Level_5
 {
 private:
 	int Killers = 0;
-	Shop& shop;  
+	Shop& shop;
 	Enemies enemy;
 public:
-	Level_5(Shop& shopRef) : shop(shopRef), enemy(40) {}
+	Level_5(Shop& shopRef) : shop(shopRef), enemy(100) {}
 
 	void StartLevel();
 	void Metting();

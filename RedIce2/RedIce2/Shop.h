@@ -13,13 +13,16 @@ private:
 	static int PriceRPG;
 
 	//Урон
+	static int DamageTrap;
 	static int DamageGun;
 	static int DamageGrenade;
 	static int DamageRPG;
 
-	//PlayerController Player;
-
 public:
+	static int GetDamageTrap();
+	static int GetGunDamage();
+	static int GetGrenadeDamage();
+	static int GetRPGDamage();
 
 	static void InfoShop();
 	static void ChoiceBuy();
@@ -27,6 +30,4 @@ public:
 	static void BuyCartridges();
 	static void BuyGrenade();
 	static void BuyRPG();
-
 };
-

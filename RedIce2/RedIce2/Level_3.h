@@ -2,8 +2,8 @@
 #include "Text.h"
 #include "PlayerController.h"
 #include "GameManager.h"
-#include "Shop.h"
 #include "Enemies.h"
+#include "Shop.h"
 
 class Shop;
 
@@ -13,7 +13,7 @@ private:
 	Shop& shop;
 	Enemies enemy;
 public:
-	Level_3(Shop& shopRef) : shop(shopRef), enemy(40) {}
+	Level_3(Shop& shopRef) : shop(shopRef), enemy(30) {}
 
 	void StartLevel();
 	void Meeting();

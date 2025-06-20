@@ -15,7 +15,7 @@ void Level_3::StartLevel()
         NoMeeting();
         break;
     default:
-        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        Text::DefaultButton();
         StartLevel();
         break;
     }
@@ -36,7 +36,7 @@ void Level_3::Meeting()
         Spy();
         break;
     default:
-        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        Text::DefaultButton();
         Meeting();
         break;
     }
@@ -58,7 +58,7 @@ void Level_3::NoMeeting()
         GameManager::Lose();
         break;
     default:
-        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        Text::DefaultButton();
         NoMeeting();
         break;
     }
@@ -85,14 +85,14 @@ void Level_3::Spy()
             Shooting();
             break;
         default:
-            cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+            Text::DefaultButton();
             Spy();
             break;
         }
     }
     else
     {
-        cout << "Ó âàñ íåäîñòàòî÷íî äåíåã!" << endl;
+        Text::BeforeLose();
         GameManager::Lose();
     }
 }
@@ -109,21 +109,22 @@ void Level_3::CleverSpy()
         Shooting();
         break;
     case 2:
-        if (PlayerController::getGun() >= 2)
+        if (PlayerController::getGun() >= 6)
         {
-            PlayerController::setGun(PlayerController::getGun() - 2);
+            PlayerController::setGun(PlayerController::getGun() - 6);
+            enemy.takeDamage(30, 1);
             PlayerController::InfoPlayer();
             Text::Level3::CleverSpy2();
             Laboratory();
         }
         else
         {
-            cout << "Ó âàñ íåäîñòàòî÷íî ïàòðîíîâ!" << endl;
-            CleverSpy();
+            Text::BeforeLose();
+            GameManager::Lose();
         }
         break;
     default:
-        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        Text::DefaultButton();
         GameManager::Lose();
         break;
     }
@@ -145,41 +146,42 @@ void Level_3::Shooting()
         switch (choice)
         {
         case 1:
-            if (PlayerController::getGun() >= 3)
+            if (PlayerController::getGun() >= 6)
             {
-                PlayerController::setGun(PlayerController::getGun() - 3);
+                PlayerController::setGun(PlayerController::getGun() - 6);
                 PlayerController::InfoPlayer();
-                enemy.takeDamage(40);
+                enemy.takeDamage(30, 1);
                 Laboratory();
             }
             else
             {
-                cout << "Ó âàñ íåäîñòàòî÷íî ïàòðîíîâ!" << endl;
+                Text::DefaultButton();
                 GameManager::Lose();
             }
             break;
         case 2:
-            if (PlayerController::getGrenade() >= 1)
+            if (PlayerController::getGrenade() >= 3)
             {
-                PlayerController::setGrenade(PlayerController::getGrenade() - 1);
+                PlayerController::setGrenade(PlayerController::getGrenade() - 3);
+                enemy.takeDamage(30, 2);
                 PlayerController::InfoPlayer();
                 Laboratory();
             }
             else
             {
-                cout << "Ó âàñ íåò ãðàíàò!" << endl;
+                Text::BeforeLose();
                 GameManager::Lose();
             }
             break;
         default:
-            cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+            Text::DefaultButton();
             Shooting();
             break;
         }
     }
     else
     {
-        cout << "Ó âàñ íåäîñòàòî÷íî äåíåã!" << endl;
+        Text::BeforeLose();
         GameManager::Lose();
     }
 }
@@ -200,7 +202,7 @@ void Level_3::Laboratory()
         GameManager::Lose();
         break;
     default:
-        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        Text::DefaultButton();
         Laboratory();
         break;
     }
@@ -221,7 +223,7 @@ void Level_3::KidnapScientists()
         Text::Level3::WinExpensive();
         break;
     default:
-        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        Text::DefaultButton();
         KidnapScientists();
         break;
     }

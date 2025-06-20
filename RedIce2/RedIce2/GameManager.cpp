@@ -2,7 +2,8 @@
 #include <cstdlib> 
 #include <limits>
 #include <conio.h>
-Shop GameManager::shop;  // Сначала Shop
+Shop GameManager::shop;
+
 Level_1 GameManager::Level1(GameManager::shop);
 Level_2 GameManager::Level2(GameManager::shop);
 Level_3 GameManager::Level3(GameManager::shop);
@@ -57,13 +58,10 @@ void GameManager::Win()
 	cout << "Вы успешно прошли наисложнешую игру! :D" << endl;
 	std::cout << "Нажмите любую клавишу для выхода..." << std::endl;
 	_getch();
-	//exit(0);
-
 }
 void GameManager::Lose()
 {
 	cout << "Вы проиграли" << endl;
 	std::cout << "Нажмите любую клавишу для выхода..." << std::endl;
-	_getch(); 
-	//exit(0);
+	_getch();
 }

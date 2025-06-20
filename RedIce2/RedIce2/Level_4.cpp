@@ -24,9 +24,13 @@ void Level_4::StartLevel()
 	case 3:
 		Raid();
 		break;
-
+	default:
+		Text::DefaultButton();
+		StartLevel();
+		break;
 	}
 }
+
 void Level_4::PreparationForSearch()
 {
 	int choice = 0;
@@ -40,8 +44,13 @@ void Level_4::PreparationForSearch()
 	case 2:
 		GameManager::Lose();
 		break;
+	default:
+		Text::DefaultButton();
+		PreparationForSearch();
+		break;
 	}
 }
+
 void Level_4::PreparationForSearch2()
 {
 	int choice = 0;
@@ -59,44 +68,51 @@ void Level_4::Raid()
 	{
 	case 1:
 		Text::Level4::Warning();
-		if (PlayerController::getGrenade() < 3 and PlayerController::getRPG() < 2)
+		if (PlayerController::getGrenade() < 6 || PlayerController::getRPG() < 3)
 		{
 			shop.BuyOrNot();
 
-			if (PlayerController::getGrenade() < 3 and PlayerController::getRPG() < 2)
+			if (PlayerController::getGrenade() < 6 || PlayerController::getRPG() < 3)
 			{
+				Text::BeforeLose();
 				GameManager::Lose();
 			}
 		}
+
 		Text::Level4::Trap();
 		cin >> choice;
+
 		switch (choice)
 		{
 		case 1:
-			if (PlayerController::getRPG() >= 1)
+			if (PlayerController::getRPG() >= 3)
 			{
-				PlayerController::setRPG(PlayerController::getRPG() - 1);
+				PlayerController::setRPG(PlayerController::getRPG() - 3);
+				enemy.takeDamage(60, 3);
 				Text::Level4::PoliceWin();
 				GameManager::Lose();
 			}
-			else {
-				cout << "ó âàñ íåò ðïã" << endl;
-				Raid();
+			else
+			{
+				Text::BeforeLose();
+				GameManager::Lose();
 			}
 		case 2:
-			if (PlayerController::getGrenade() >= 3)
+			if (PlayerController::getGrenade() >= 6)
 			{
-				PlayerController::setGrenade(PlayerController::getGrenade() - 3);
+				PlayerController::setGrenade(PlayerController::getGrenade() - 6);
+				enemy.takeDamage(60, 6);
 				Text::Level4::PoliceWin();
 				GameManager::Lose();
 			}
-			else {
-				cout << "ó âàñ íåò ãðàíàò(èëè èõ íåäîñòàòî÷íî)" << endl;
-				Raid();
+			else
+			{
+				Text::BeforeLose();
+				GameManager::Lose();
 			}
 
 		default:
-			cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+			Text::DefaultButton();
 			Raid();
 			break;
 		}
@@ -106,7 +122,7 @@ void Level_4::Raid()
 		WaitRaid();
 		break;
 	default:
-		cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+		Text::DefaultButton();
 		Raid();
 		break;
 	}
@@ -127,7 +143,7 @@ void Level_4::WaitRaid()
 		GameManager::Lose();
 		break;
 	default:
-		cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+		Text::DefaultButton();
 		WaitRaid();
 		break;
 	}

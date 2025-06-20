@@ -16,7 +16,7 @@ void Level_1::StartLevel()
         Negotiations();
         break;
     default:
-        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        Text::DefaultButton();
         StartLevel();
         break;
     }
@@ -43,7 +43,7 @@ void Level_1::DestroyEnemy()
         DestroyEnemy();
         break;
     default:
-        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        Text::DefaultButton();
         DestroyEnemy();
         break;
     }
@@ -66,6 +66,7 @@ void Level_1::Negotiations()
         }
         else
         {
+            Text::BeforeLose();
             GameManager::Lose();
         }
         break;
@@ -78,6 +79,7 @@ void Level_1::Negotiations()
         }
         else
         {
+            Text::BeforeLose();
             GameManager::Lose();
         }
         break;
@@ -86,7 +88,7 @@ void Level_1::Negotiations()
         GameManager::Lose();
         break;
     default:
-        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        Text::DefaultButton();
         Negotiations();
         break;
     }
@@ -110,6 +112,7 @@ void Level_1::PeopleDesert()
         }
         else
         {
+            Text::BeforeLose();
             GameManager::Lose();
         }
         break;
@@ -122,6 +125,7 @@ void Level_1::PeopleDesert()
         }
         else
         {
+            Text::BeforeLose();
             GameManager::Lose();
         }
         break;
@@ -134,6 +138,7 @@ void Level_1::PeopleDesert()
         }
         else
         {
+            Text::BeforeLose();
             GameManager::Lose();
         }
         break;
@@ -146,11 +151,12 @@ void Level_1::PeopleDesert()
         }
         else
         {
+            Text::BeforeLose();
             GameManager::Lose();
         }
         break;
     default:
-        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        Text::DefaultButton();
         PeopleDesert();
         break;
     }
@@ -165,15 +171,16 @@ void Level_1::StrategyDesert()
     switch (choice)
     {
     case 1:
-        if (PlayerController::getGun() >= 3)
+        if (PlayerController::getGun() >= 4)
         {
             Text::Level1::DesertAttak();
-            enemy.takeDamage(20);
-            PlayerController::setGun(PlayerController::getGun() - 3);
+            enemy.takeDamage(20, 1);
+            PlayerController::setGun(PlayerController::getGun() - 4);
             LoseOrWin();
         }
         else
         {
+            Text::BeforeLose();
             GameManager::Lose();
         }
         break;
@@ -181,18 +188,19 @@ void Level_1::StrategyDesert()
         if (PlayerController::getGun() >= 4)
         {
             Text::Level1::DesertDefense();
-            enemy.takeDamage(20);
+            enemy.takeDamage(20, 1);
             PlayerController::setGun(PlayerController::getGun() - 4);
             PlayerController::setHP(PlayerController::getHP() - 20);
             LoseOrWin();
         }
         else
         {
+            Text::BeforeLose();
             GameManager::Lose();
         }
         break;
     default:
-        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        Text::DefaultButton();
         StrategyDesert();
         break;
     }
@@ -203,11 +211,11 @@ void Level_1::LoseOrWin()
 {
     if (Killers == 4)
     {
-        if (PlayerController::getGun() >= 2)
+        if (PlayerController::getGun() >= 4)
         {
             Text::Level1::Survive();
-            enemy.takeDamage(20);
-            PlayerController::setGun(PlayerController::getGun() - 2);
+            enemy.takeDamage(20, 1);
+            PlayerController::setGun(PlayerController::getGun() - 4);
             Text::Level1::Win1();
             PlayerController::setMoney(PlayerController::getMoney() + 1000);
             PlayerController::setInfluence(PlayerController::getInfluence() + 10);
@@ -215,6 +223,7 @@ void Level_1::LoseOrWin()
         }
         else
         {
+            Text::BeforeLose();
             GameManager::Lose();
         }
     }
@@ -243,6 +252,7 @@ void Level_1::EnemysLair()
         }
         else
         {
+            Text::BeforeLose();
             GameManager::Lose();
         }
         break;
@@ -255,6 +265,7 @@ void Level_1::EnemysLair()
         }
         else
         {
+            Text::BeforeLose();
             GameManager::Lose();
         }
         break;
@@ -267,11 +278,12 @@ void Level_1::EnemysLair()
         }
         else
         {
+            Text::BeforeLose();
             GameManager::Lose();
         }
         break;
     default:
-        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        Text::DefaultButton();
         EnemysLair();
         break;
     }
@@ -286,7 +298,7 @@ void Level_1::StrategyLair()
 
         int choice = 0;
         Text::Level1::AttakLair();
-        enemy.takeDamage(10);
+        enemy.takeDamage(10, 1);
         PlayerController::InfoPlayer();
         cin >> choice;
 
@@ -305,17 +317,19 @@ void Level_1::StrategyLair()
             }
             else
             {
+                Text::BeforeLose();
                 GameManager::Lose();
             }
             break;
         default:
-            cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+            Text::DefaultButton();
             StrategyLair();
             break;
         }
     }
     else
     {
+        Text::BeforeLose();
         GameManager::Lose();
     }
     PlayerController::InfoPlayer();

@@ -1,4 +1,4 @@
-#include "Shop.h"
+include "Shop.h"
 using std::cout;
 using std::cin;
 using std::endl;
@@ -12,9 +12,15 @@ int Shop::PriceGrenade = 1500;
 int Shop::PriceRPG = 2000;
 
 //Урон
-int Shop::DamageGun = 10;
-int Shop::DamageGrenade = 20;
-int Shop::DamageRPG = 30;
+int Shop::DamageTrap = 20;
+int Shop::DamageGun = 5;
+int Shop::DamageGrenade = 10;
+int Shop::DamageRPG = 20;
+
+int Shop::GetDamageTrap() { return DamageTrap; }
+int Shop::GetGunDamage() { return DamageGun; }
+int Shop::GetGrenadeDamage() { return DamageGrenade; }
+int Shop::GetRPGDamage() { return DamageRPG; }
 
 
 void Shop::InfoShop() {
@@ -96,9 +102,9 @@ void Shop::BuyCartridges() //Покупка патрон
 		int b = a - PriceCartridges;
 		PlayerController::setMoney(b);
 		int c = PlayerController::getGun();
-		int d = c += 5;
+		int d = c += 8;
 		PlayerController::setMoney(d);
-		cout << "Патроны: +5" << endl;
+		cout << "Патроны: +8" << endl;
 	}
 	else {
 		cout << "Недостаточно денег" << endl;
@@ -113,10 +119,10 @@ void Shop::BuyGrenade() //Покупка гранат
 		int b = a - PriceGrenade;
 		PlayerController::setMoney(b);
 		int c = PlayerController::getGrenade();
-		int d = c += 3;
+		int d = c += 4;
 		PlayerController::setMoney(d);
-		cout << "Гранаты: +3" << endl;
-		
+		cout << "Гранаты: +4" << endl;
+
 	}
 	else {
 		cout << "Недостаточно денег" << endl;
@@ -130,9 +136,9 @@ void Shop::BuyRPG() //Покупка РПГ
 		int b = a - PriceRPG;
 		PlayerController::setMoney(b);
 		int c = PlayerController::getRPG();
-		int d = c += 2;
+		int d = c += 3;
 
-		cout << "РПГ куплен" << endl;
+		cout << "РПГ: +3" << endl;
 	}
 	else {
 		cout << "Недостаточно денег" << endl;

@@ -8,6 +8,9 @@ class Text
 {
 public:
 	static void Continue();
+	static void DefaultButton();
+	static void BeforeLose();
+
 	struct Level1
 	{
 		static void HelloPablo1();
@@ -148,7 +151,5 @@ public:
 		static void NoRPG();
 		static void WinFinal();
 		static void PoorPreparation();
-
 	};
 };
-

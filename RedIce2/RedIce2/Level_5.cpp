@@ -1,5 +1,4 @@
 #include "Level_5.h"
-
 #include "GameManager.h"
 #include "Shop.h"
 
@@ -21,16 +20,18 @@ void Level_5::StartLevel()
 		AttackChapo();
 		break;
 	default:
-		cout << "Õ≈œ–¿¬»À‹Õ€… ¬¬Œƒ!" << endl;
+		Text::DefaultButton();
 		StartLevel();
 		break;
 	}
 }
+
 void Level_5::Metting()
 {
 	int choice;
 	Text::Level5::Meeting();
 	cin >> choice;
+
 	switch (choice)
 	{
 	case 1:
@@ -40,12 +41,13 @@ void Level_5::Metting()
 		AttackChapo();
 		break;
 	default:
-		cout << "Õ≈œ–¿¬»À‹Õ€… ¬¬Œƒ!" << endl;
+		Text::DefaultButton();
 		Metting();
 		break;
 	}
 
 }
+
 void Level_5::AttackChapo()
 {
 	int choice;
@@ -63,7 +65,7 @@ void Level_5::AttackChapo()
 		AttackPlane();
 		break;
 	default:
-		cout << "Õ≈œ–¿¬»À‹Õ€… ¬¬Œƒ!" << endl;
+		Text::DefaultButton();
 		AttackChapo();
 		break;
 	}
@@ -87,25 +89,28 @@ void Level_5::Friend()
 		break;
 	default:
 		Friend();
-		cout << "Õ≈œ–¿¬»À‹Õ€… ¬¬Œƒ!" << endl;
+		Text::DefaultButton();
 		break;
 	}
 }
+
 void Level_5::Trap()
 {
 	Text::Level5::Trap();
 	AttackChapo();
 }
+
 void Level_5::AttackPlane()
 {
 	if (PlayerController::getMoney() < 1500)
 	{
-		cout << "” ‚‡Ò ÌÂ‰ÓÒÚ‡ÚÓ˜ÌÓ ‰ÂÌÂ„" << endl;
 		GameManager::Lose();
 	}
+
 	int choice;
 	Text::Level5::AttackPlane();
 	cin >> choice;
+
 	switch (choice)
 	{
 	case 1:
@@ -119,33 +124,38 @@ void Level_5::AttackPlane()
 
 	default:
 		AttackPlane();
-		cout << "Õ≈œ–¿¬»À‹Õ€… ¬¬Œƒ!" << endl;
+		Text::DefaultButton();
 		break;
 	}
 }
-void Level_5::AttackPlane2() 
+
+void Level_5::AttackPlane2()
 {
 	int choice;
 	Text::Level5::AttackPlane2();
 	cin >> choice;
+
 	switch (choice)
 	{
 	case 1:
 		TrapStrategy();
 		break;
 	case 2:
+		//////////
 	default:
-		cout << "Õ≈œ–¿¬»À‹Õ€… ¬¬Œƒ!" << endl;
+		Text::DefaultButton();
 		AttackPlane2();
 		break;
 	}
 
 }
+// ÌÂÚ case 2
 void Level_5::TrapStrategy() //Á‡Ï‡ÌËÚ¸ ‚ ÎÓ‚Û¯ÍÛ
 {
 	int choice;
 	Text::Level5::TrapStrategy();
 	cin >> choice;
+
 	switch (choice)
 	{
 	case 1://ËÒÔÓÎ¸ÁÓ‚‡Ú¸ Ï‡„Ó
@@ -157,11 +167,12 @@ void Level_5::TrapStrategy() //Á‡Ï‡ÌËÚ¸ ‚ ÎÓ‚Û¯ÍÛ
 		Surveillance();
 		break;
 	default:
-		cout << "Õ≈œ–¿¬»À‹Õ€… ¬¬Œƒ!" << endl;
+		Text::DefaultButton();
 		TrapStrategy();
 		break;
 	}
 }
+// ÌÂÚ case 1
 void Level_5::TrapMargo() //ËÒÔÓÎ¸ÁÓ‚‡Ú¸ Ï‡„Ó
 {
 	int choice;
@@ -178,11 +189,12 @@ void Level_5::TrapMargo() //ËÒÔÓÎ¸ÁÓ‚‡Ú¸ Ï‡„Ó
 		AttackStartegy();
 		break;
 	default:
-		cout << "Õ≈œ–¿¬»À‹Õ€… ¬¬Œƒ!" << endl;
+		Text::DefaultButton();
 		TrapMargo();
 		break;
 	}
 }
+
 void Level_5::DeathMargo()
 {
 	int choice;
@@ -191,42 +203,52 @@ void Level_5::DeathMargo()
 	switch (choice)
 	{
 	case 1:
-		if (PlayerController::getRPG() >= 1) 
+		if (PlayerController::getRPG() >= 5)
 		{
-			PlayerController::setRPG(PlayerController::getRPG() - 1);
+			PlayerController::setRPG(PlayerController::getRPG() - 5);
+			enemy.takeDamage(100, 3);
 			Text::Level5::WinSad();
 		}
-		else {
+		else
+		{
+			Text::BeforeLose();
 			GameManager::Lose();
 		}
 		break;
 	case 2:
-		if (PlayerController::getGrenade() >= 3) 
+		if (PlayerController::getGrenade() >= 10)
 		{
-			PlayerController::setGrenade(PlayerController::getGrenade() - 3);
+			PlayerController::setGrenade(PlayerController::getGrenade() - 10);
+			enemy.takeDamage(100, 2);
 			Text::Level5::WinSad();
 		}
-		else {
+		else
+		{
+			Text::BeforeLose();
 			GameManager::Lose();
 		}
 		break;
 	case 3:
-		if (PlayerController::getGun() >= 10) 
+		if (PlayerController::getGun() >= 20)
 		{
-			PlayerController::setGun(PlayerController::getGun() - 10);
+			PlayerController::setGun(PlayerController::getGun() - 20);
+			enemy.takeDamage(100, 1);
 			Text::Level5::WinSad();
 		}
-		else {
+		else
+		{
+			Text::BeforeLose();
 			GameManager::Lose();
 		}
 		break;
 	default:
-		cout << "Õ≈œ–¿¬»À‹Õ€… ¬¬Œƒ!" << endl;
+		Text::DefaultButton();
 		DeathMargo();
 		break;
 	}
 }
-void Level_5::Surveillance() 
+
+void Level_5::Surveillance()
 {
 	int choice;
 	Text::Level5::Surveillance();
@@ -234,37 +256,46 @@ void Level_5::Surveillance()
 	switch (choice)
 	{
 	case 1:
-		if (PlayerController::getRPG() >= 1)
+		if (PlayerController::getRPG() >= 5)
 		{
-			PlayerController::setRPG(PlayerController::getRPG() - 1);
+			PlayerController::setRPG(PlayerController::getRPG() - 5);
+			enemy.takeDamage(100, 3);
 			Text::Level5::WinShort();
 		}
-		else {
+		else
+		{
+			Text::BeforeLose();
 			GameManager::Lose();
 		}
 		break;
 	case 2:
-		if (PlayerController::getGrenade() >= 3) {
-			PlayerController::setGrenade(PlayerController::getGrenade() - 3);
+		if (PlayerController::getGrenade() >= 10)
+		{
+			PlayerController::setGrenade(PlayerController::getGrenade() - 10);
+			enemy.takeDamage(100, 2);
 			Text::Level5::WinShort();
 		}
-		else 
+		else
 		{
+			Text::BeforeLose();
 			GameManager::Lose();
 		}
 		break;
 	case 3:
-		if (PlayerController::getGun() >= 10) {
-			PlayerController::setGun(PlayerController::getGun() - 10);
+		if (PlayerController::getGun() >= 20)
+		{
+			PlayerController::setGun(PlayerController::getGun() - 20);
+			enemy.takeDamage(100, 1);
 			Text::Level5::WinShort();
 		}
-		else 
+		else
 		{
+			Text::BeforeLose();
 			GameManager::Lose();
 		}
 		break;
 	default:
-		cout << "Õ≈œ–¿¬»À‹Õ€… ¬¬Œƒ!" << endl;
+		Text::DefaultButton();
 		Surveillance();
 		break;
 	}
@@ -284,13 +315,14 @@ void Level_5::AttackStartegy()
 		AttackStartegy2();
 		break;
 	default:
-		cout << "Õ≈œ–¿¬»À‹Õ€… ¬¬Œƒ!" << endl;
+		Text::DefaultButton();
 		AttackStartegy();
 		break;
 	}
-	
+
 }
-void Level_5::AttackStartegy2() 
+
+void Level_5::AttackStartegy2()
 {
 	int choice;
 	Text::Level5::AttackStartegy2();
@@ -304,13 +336,14 @@ void Level_5::AttackStartegy2()
 		AttackStartegy3();
 		break;
 	default:
-		cout << "Õ≈œ–¿¬»À‹Õ€… ¬¬Œƒ!" << endl;
+		Text::DefaultButton();
 		AttackStartegy2();
 		break;
 	}
-	
+
 }
-void Level_5::AttackStartegy3() 
+
+void Level_5::AttackStartegy3()
 {
 	int choice;
 	Text::Level5::AttackStartegy3();
@@ -325,59 +358,61 @@ void Level_5::AttackStartegy3()
 		HowContiniue();
 		break;
 	default:
-		cout << "Õ≈œ–¿¬»À‹Õ€… ¬¬Œƒ!" << endl;
+		Text::DefaultButton();
 		AttackStartegy3();
 		break;
 	}
 }
 
-void Level_5::ifDefense() 
+void Level_5::ifDefense()
 {
-	if (PlayerController::getGun() >= 4) 
+	if (PlayerController::getGun() >= 4)
 	{
 		Text::Level5::ifDefense();
 		PlayerController::setGun(PlayerController::getGun() - 4);
 		PlayerController::setHP(PlayerController::getHP() - 20);
-		enemy =- 20;
+		enemy.takeDamage(20, 1);
 		HowContiniue();
 	}
-	else 
+	else
 	{
-		cout << "” ‚‡Ò ÌÂÚ Ô‡ÚÓÌ, ‚˚ ÌÂ ÒÏÓ„ÎË Á‡˘Ë˘ËÚ¸Òˇ" << endl;
+		Text::BeforeLose();
 		GameManager::Lose();
 	}
-	
+
 }
-void Level_5::HowContiniue() 
+
+void Level_5::HowContiniue()
 {
-	if (PlayerController::getHP() > 0) 
+	if (PlayerController::getHP() > 0)
 	{
 		int choice;
 		Text::Level5::HowContiniue();
 		cin >> choice;
+
 		switch (choice)
 		{
 		case 1:
-			if (PlayerController::getGun() >= 4) 
+			if (PlayerController::getGun() >= 8)
 			{
-				PlayerController::setGun(PlayerController::getGun() - 4);
+				PlayerController::setGun(PlayerController::getGun() - 8);
 				PlayerController::setHP(PlayerController::getHP() - 20);
-				enemy =- 40;
+				enemy.takeDamage(40, 1);
 				Text::Level5::ifPatrons();
 				GameManager::Lose();
 			}
-			else 
+			else
 			{
 				Text::Level5::PoorPreparation();
 				GameManager::Lose();
 			}
 			break;
 		case 2:
-			if (PlayerController::getRPG() >= 1) 
+			if (PlayerController::getRPG() >= 2)
 			{
-				PlayerController::setRPG(PlayerController::getRPG() - 1);
+				PlayerController::setRPG(PlayerController::getRPG() - 2);
 				PlayerController::setHP(PlayerController::getHP() - 20);
-				enemy = -40;
+				enemy.takeDamage(40, 3);
 				RPGorGrenade();
 			}
 			else
@@ -387,10 +422,11 @@ void Level_5::HowContiniue()
 			}
 			break;
 		case 3:
-			if (PlayerController::getGrenade() >= 2) {
-				PlayerController::setGrenade(PlayerController::getGrenade() - 2);
+			if (PlayerController::getGrenade() >= 4)
+			{
+				PlayerController::setGrenade(PlayerController::getGrenade() - 4);
 				PlayerController::setHP(PlayerController::getHP() - 20);
-				enemy = -40;
+				enemy.takeDamage(40, 2);
 				RPGorGrenade();
 			}
 			else
@@ -401,71 +437,73 @@ void Level_5::HowContiniue()
 			break;
 
 		default:
-			cout << "Õ≈œ–¿¬»À‹Õ€… ¬¬Œƒ!" << endl;
+			Text::DefaultButton();
 			HowContiniue();
 			break;
 		}
 	}
-	else 
+	else
 	{
-		cout << "¬˚ ÔÓ„Ë·ÎË" << endl;
+		Text::BeforeLose();
 		GameManager::Lose();
 	}
 }
-void Level_5::RPGorGrenade() 
+
+void Level_5::RPGorGrenade()
 {
 	int choice;
 	Text::Level5::RPGorGrenade();
 	cin >> choice;
+
 	switch (choice)
 	{
 	case 1:
 		if (PlayerController::getGun() >= 3)
 		{
 			PlayerController::setGun(PlayerController::getGun() - 3);
+			enemy.takeDamage(15, 1);
 			Text::Level5::NoRPG();
 			GameManager::Lose();
 		}
 		else
 		{
-			PlayerController::setHP(PlayerController::getHP() - 80);
+			Text::BeforeLose();
+			GameManager::Lose();
 		}
 		break;
 	case 2:
 		if (PlayerController::getGrenade() >= 3)
 		{
 			PlayerController::setGrenade(PlayerController::getGrenade() - 3);
+			enemy.takeDamage(30, 2);
 			Text::Level5::NoRPG();
 			GameManager::Lose();
 		}
-		else 
+		else
 		{
-			PlayerController::setHP(PlayerController::getHP() - 80);
+			Text::BeforeLose();
+			GameManager::Lose();
 		}
 		break;
 	case 3:
 		if (PlayerController::getRPG() >= 2)
 		{
 			PlayerController::setRPG(PlayerController::getRPG() - 2);
+			enemy.takeDamage(40, 3);
 			PlayerController::setInfluence(PlayerController::getInfluence() + 100);
 			PlayerController::setMoney(PlayerController::getMoney() + 1000);
 			PlayerController::setHP(100);
 			Text::Level5::WinFinal();
 		}
-		else 
+		else
 		{
-			PlayerController::setHP(PlayerController::getHP() - 80);
+			Text::BeforeLose();
+			GameManager::Lose();
 		}
 		break;
 	default:
-		cout << "Õ≈œ–¿¬»À‹Õ€… ¬¬Œƒ!" << endl;
+		Text::DefaultButton();
 		RPGorGrenade();
 		break;
 	}
-	if (PlayerController::getHP() <= 0)
-	{
-		Text::Level5::PoorPreparation();
-		GameManager::Lose();
-	}
-
 }

@@ -17,7 +17,7 @@ void Level_2::StartLevel()
         Attack();
         break;
     default:
-        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        Text::DefaultButton();
         StartLevel();
         break;
     }
@@ -44,7 +44,7 @@ void Level_2::Attack()
         PeopleAttack();
         break;
     default:
-        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        Text::DefaultButton();
         Attack();
         break;
     }
@@ -66,12 +66,11 @@ void Level_2::Trap()
         break;
     case 2:
         Text::Level2::Trap2();
-        enemy.takeDamage(20);
+        enemy.takeDamage(Shop::GetDamageTrap(), 4);
         PeopleAttack();
         break;
     default:
-        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
-        Trap();
+        Text::DefaultButton();
         break;
     }
 }
@@ -94,6 +93,7 @@ void Level_2::PeopleAttack()
         }
         else
         {
+            Text::BeforeLose();
             GameManager::Lose();
         }
         break;
@@ -107,6 +107,7 @@ void Level_2::PeopleAttack()
         }
         else
         {
+            Text::BeforeLose();
             GameManager::Lose();
         }
         break;
@@ -120,11 +121,12 @@ void Level_2::PeopleAttack()
         }
         else
         {
+            Text::BeforeLose();
             GameManager::Lose();
         }
         break;
     default:
-        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        Text::DefaultButton();
         PeopleAttack();
         break;
     }
@@ -153,7 +155,7 @@ void Level_2::AttackPlace()
         StrategyAttack();
         break;
     default:
-        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        Text::DefaultButton();
         AttackPlace();
         break;
     }
@@ -169,34 +171,37 @@ void Level_2::StrategyAttack()
     {
     case 1:
         Text::Level2::AttackFirst();
-        if (PlayerController::getGun() >= 2)
+        if (PlayerController::getGun() >= 4)
         {
-            PlayerController::setGun(PlayerController::getGun() - 2);
-            enemy.takeDamage(20);
+            PlayerController::setGun(PlayerController::getGun() - 4);
+            enemy.takeDamage(20, 1);
             PlayerController::InfoPlayer();
             ContinueStrat();
         }
         else
         {
+            Text::BeforeLose();
             GameManager::Lose();
         }
         break;
     case 2:
         PlayerController::setHP(PlayerController::getHP() - 15);
+
         if (PlayerController::getGun() >= 2)
         {
             PlayerController::setGun(PlayerController::getGun() - 2);
-            enemy.takeDamage(10);
+            enemy.takeDamage(10, 1);
             PlayerController::InfoPlayer();
             ContinueStrat();
         }
         else
         {
+            Text::BeforeLose();
             GameManager::Lose();
         }
         break;
     default:
-        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        Text::DefaultButton();
         StrategyAttack();
         break;
     }
@@ -211,35 +216,37 @@ void Level_2::ContinueStrat()
     switch (choice)
     {
     case 1:
-        if (PlayerController::getGrenade() >= 1)
+        if (PlayerController::getGrenade() >= 2)
         {
-            PlayerController::setGrenade(PlayerController::getGrenade() - 1);
-            enemy.takeDamage(20);
+            PlayerController::setGrenade(PlayerController::getGrenade() - 2);
+            enemy.takeDamage(20, 2);
             PlayerController::InfoPlayer();
             Text::Level2::ifGrenade();
             FinalPart();
         }
         else
         {
+            Text::BeforeLose();
             GameManager::Lose();
         }
         break;
     case 2:
-        if (PlayerController::getGun() >= 3)
+        if (PlayerController::getGun() >= 4)
         {
-            PlayerController::setGun(PlayerController::getGun() - 3);
-            enemy.takeDamage(20);
+            PlayerController::setGun(PlayerController::getGun() - 4);
+            enemy.takeDamage(20, 1);
             PlayerController::InfoPlayer();
             Text::Level2::ifGuns();
             FinalPart();
         }
         else
         {
+            Text::BeforeLose();
             GameManager::Lose();
         }
         break;
     default:
-        cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+        Text::DefaultButton();
         ContinueStrat();
         break;
     }
@@ -264,10 +271,10 @@ void Level_2::FinalPart()
         switch (choice)
         {
         case 1:
-            if (PlayerController::getGun() >= 2)
+            if (PlayerController::getGun() >= 4)
             {
-                PlayerController::setGun(PlayerController::getGun() - 2);
-                enemy.takeDamage(20);
+                PlayerController::setGun(PlayerController::getGun() - 4);
+                enemy.takeDamage(20, 1);
                 Text::Level2::WinL2();
                 PlayerController::setMoney(PlayerController::getMoney() + 2000);
                 PlayerController::setInfluence(PlayerController::getInfluence() + 10);
@@ -276,14 +283,15 @@ void Level_2::FinalPart()
             }
             else
             {
+                Text::BeforeLose();
                 GameManager::Lose();
             }
             break;
         case 2:
-            if (PlayerController::getGrenade() >= 1)
+            if (PlayerController::getGrenade() >= 2)
             {
-                PlayerController::setGrenade(PlayerController::getGrenade() - 1);
-                enemy.takeDamage(20);
+                PlayerController::setGrenade(PlayerController::getGrenade() - 2);
+                enemy.takeDamage(20, 2);
                 Text::Level2::WinL2();
                 PlayerController::setMoney(PlayerController::getMoney() + 2000);
                 PlayerController::setHP(PlayerController::getHP() + 20);
@@ -291,11 +299,12 @@ void Level_2::FinalPart()
             }
             else
             {
+                Text::BeforeLose();
                 GameManager::Lose();
             }
             break;
         default:
-            cout << "ÍÅÏÐÀÂÈËÜÍÛÉ ÂÂÎÄ!" << endl;
+            Text::DefaultButton();
             FinalPart();
             break;
         }
